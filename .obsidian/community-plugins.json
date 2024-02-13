@@ -1,3 +1,14 @@
 [
-  "obsidian-git"
+  "obsidian-git",
+  "obsidian-excalidraw-plugin",
+  "obsidian-advanced-slides",
+  "table-editor-obsidian",
+  "dataview",
+  "cm-editor-syntax-highlight-obsidian",
+  "obsidian-emoji-toolbar",
+  "obsidian-icon-folder",
+  "obsidian-kanban",
+  "obsidian-minimal-settings",
+  "obsidian-outliner",
+  "obsidian-tasks-plugin"
 ]
