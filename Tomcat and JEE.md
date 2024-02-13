@@ -13,3 +13,10 @@ you can check the deployment status by seeing the logs of the container:
 docker logs container-name
 ```
 you servlet will be available at `localhost:8080/warfilename`
+Also you may have a maven version problem you can fix it by that:
+```xml
+<properties>
+        <maven.compiler.source>11</maven.compiler.source>
+        <maven.compiler.target>11</maven.compiler.target>
+    </properties>
+```
