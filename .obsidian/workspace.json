@@ -8,24 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "e6809759b536dea9",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "DBA.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "c8146220413356cf",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "naruto.md",
+                "file": "DBA.md",
                 "mode": "source",
                 "source": false
               }
@@ -152,6 +140,14 @@
                 "file": "DBA.md"
               }
             }
+          },
+          {
+            "id": "4d949c6ac6928784",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {}
+            }
           }
         ]
       }
@@ -173,9 +169,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "e6809759b536dea9",
+  "active": "255726e46290aee2",
   "lastOpenFiles": [
     "naruto.md",
+    "Excalidraw/Drawing 2024-02-14 09.14.43.excalidraw.md",
     "DBA.md",
     "Excalidraw/Tomcat and JEE 2024-02-13 22.05.36.excalidraw.md",
     "Tomcat and JEE.md",

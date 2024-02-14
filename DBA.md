@@ -4,3 +4,4 @@ immediate: shutdown sur place
 transactional: shutdown when validation/annulations de transaction
 normal: quitter sur place
 init.ora
+dba_user //database has all informations of all users
