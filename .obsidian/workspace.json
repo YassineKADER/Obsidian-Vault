@@ -4,28 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "8495f39513309250",
+        "id": "bcb71b58d33393d1",
         "type": "tabs",
         "children": [
           {
-            "id": "c8146220413356cf",
+            "id": "d9bf53484b68134b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
                 "file": "DBA.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "50b9188561f11bee",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "V2ray.md",
                 "mode": "source",
                 "source": false
               }
@@ -169,14 +157,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "255726e46290aee2",
+  "active": "d9bf53484b68134b",
   "lastOpenFiles": [
+    "Untitled.canvas",
+    "Untitled 1.canvas",
+    "DBA.md",
+    "2024-02-14.md",
+    "V2ray.md",
     "naruto.md",
     "Excalidraw/Drawing 2024-02-14 09.14.43.excalidraw.md",
-    "DBA.md",
     "Excalidraw/Tomcat and JEE 2024-02-13 22.05.36.excalidraw.md",
     "Tomcat and JEE.md",
-    "Excalidraw",
-    "V2ray.md"
+    "Excalidraw"
   ]
 }
