@@ -23,3 +23,6 @@ GRANT CREATE SESSION, CREATE ANY TABLE TO R;
 --question 4
 GRANT R TO Khalid WITH ADMIN OPTION;
 ```
+```sql
+Connect sys / as sysdba
+```
