@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "8959a3d0780b3b53",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Amplify-Android-Auth.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "DBA.md",
+                "file": "Amplify-Android-Auth.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "DBA.md",
+                "file": "Amplify-Android-Auth.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "DBA.md"
+                "file": "Amplify-Android-Auth.md"
               }
             }
           },
@@ -157,11 +170,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "d9bf53484b68134b",
+  "active": "8959a3d0780b3b53",
   "lastOpenFiles": [
+    "DBA.md",
+    "Amplify-Android-Auth.md",
     "Untitled.canvas",
     "Untitled 1.canvas",
-    "DBA.md",
     "2024-02-14.md",
     "V2ray.md",
     "naruto.md",
