@@ -26,3 +26,16 @@ GRANT R TO Khalid WITH ADMIN OPTION;
 ```sql
 Connect sys / as sysdba
 ```
+iuhsfhiehrfierh
+	uienfjksdnfkjsd
+	sdjfnksjdnfksd
+	jsdnfjsndjnf
+		jnsfjdnjsndfnsjdn
+		sdjfnsjndf
+		sdnfjsndfn
+			jfnsjdnfjnsdnfnsdjf
+				ijksdjfksjdf
+			sdnfjnsdnfdsf
+		sjdnfjsdfnsd
+	sjdnfjsdnjfnsdjfn
+	
