@@ -31,8 +31,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -98,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Tomcat and JEE.md",
+                "file": "DBA.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Tomcat and JEE.md",
+                "file": "DBA.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Tomcat and JEE.md"
+                "file": "DBA.md"
               }
             }
           },
@@ -170,8 +169,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "8959a3d0780b3b53",
+  "active": "d9bf53484b68134b",
   "lastOpenFiles": [
+    "Tomcat and JEE.md",
     "DBA.md",
     "Amplify-Android-Auth.md",
     "Untitled.canvas",
@@ -181,7 +181,6 @@
     "naruto.md",
     "Excalidraw/Drawing 2024-02-14 09.14.43.excalidraw.md",
     "Excalidraw/Tomcat and JEE 2024-02-13 22.05.36.excalidraw.md",
-    "Tomcat and JEE.md",
     "Excalidraw"
   ]
 }

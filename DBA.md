@@ -28,6 +28,7 @@ GRANT R TO Khalid WITH ADMIN OPTION;
 Connect sys / as sysdba
 ```
 ## Tp 1
+### Gestion d’Instance et de Base de données ORACLE
 1. **Startup Options:**
     - `startup`: Normal startup.
     - `startup nomount`: Starts the instance without mounting the database.
@@ -73,26 +74,62 @@ Connect sys / as sysdba
 16. **Reconnect as HR User and Observe.**
 17. **Disable Restricted Session as SYS User.**
 
-**Gestion des utilisateurs, privilèges et rôles**
+### Gestion des utilisateurs, privilèges et rôles**
+**1. Open SQL*Plus Session as user_isil and Display Username:**
 
-1. **Connect as SYS and Create emp_isil Table:**
-    
-    - `sqlplus sys as sysdba`
-    - `create table emp_isil (id_emp, nom, prenom, salaire);`
-2. **Insert Rows into emp_isil Table.**
-    
-3. **Create user_isil User with Password Policy:**
-    
-    - `create user user_isil identified by password quota 100M on users;`
-4. **Create R_isil Role:**
-    
-    - `create role R_isil;`
-5. **Grant Privileges to R_isil Role:**
-    
-    - `grant create session, create table, select on emp_isil to R_isil;`
-6. **Grant R_isil Role to user_isil:**
-    
-    - `grant R_isil to user_isil;`
-7. **View Roles Granted to user_isil:**
-    
-    - `select * from dba_role_privs where grantee = 'USER_ISIL';`
+- Command: `sqlplus user_isil/password`
+- Response: `Connected to Oracle Database as USER_ISIL`
+
+**2. In user_isil Session, Check Object Privileges Granted:**
+
+- Command: `select * from user_tab_privs;`
+
+**3. In user_isil Session, Check System Privileges Granted:**
+
+- Command: `select * from user_sys_privs;`
+
+**4. In user_isil Session, Check Roles Granted:**
+
+- Command: `select * from user_role_privs;`
+
+**5. Display Contents of emp_isil Table:**
+
+- Command: `select * from emp_isil;`
+
+**6. In Nom_isil Session, Create service Table:**
+
+`create table service (     id number,     libelle varchar(15) );`
+
+**7. In system Session, Remove 'CREATE TABLE' Privilege from R_isil Role:**
+
+- Command: `revoke create table from R_isil;`
+
+**8. View Updated Privileges of R_isil Role:**
+
+- Command: `select * from dba_sys_privs where grantee = 'R_ISIL';`
+
+**9. In Nom_isil Session, Create emp Table:**
+
+`create table emp (     id_emp,     nom,     prenom,     salaire );`
+
+**10. Revoke Role from Nom_isil User:** - Command: `revoke R_isil from Nom_isil;`
+
+**11. In Nom_isil Session, Display Granted Roles:** - Command: `select * from session_roles;`
+
+**12. Grant R_isil Role to All Database Users:** - Command: `grant R_isil to public;`
+
+**13. View Updated Roles Granted to Nom_isil User:** - Command: `select * from user_role_privs where grantee = 'NOM_ISIL';`
+
+**14. Revoke Role from Nom_isil User:** - Command: `revoke R_isil from Nom_isil;`
+
+**15. From system Session, Grant Salary Modification Right to Nom_isil User:** - Command: `grant update (salaire) on emp_isil to Nom_isil;`
+
+**16. In Nom_isil Session, Attempt Salary Modification:** - Command: `update emp_isil set salaire = salaire + 500 where ...;`
+
+**17. Display Column-Level Privileges Granted to Nom_isil User:** - Command: `select table_name, column_name, privilege from user_tab_privs where grantee = 'NOM_ISIL';`
+
+If a user needs to be defined, use the following command to create a user in Oracle 21c:
+
+`CREATE USER username IDENTIFIED BY password;`
+
+Replace `username` with the desired username and `password` with the desired password.
