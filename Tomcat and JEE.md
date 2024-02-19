@@ -20,3 +20,38 @@ Also you may have a maven version problem you can fix it by that:
         <maven.compiler.target>11</maven.compiler.target>
     </properties>
 ```
+### Simple script to build and deploy the servlet
+
+```bash
+#!/bin/bash
+
+
+
+# Build the project with Maven
+
+mvn clean package
+
+  
+
+# Check if the build was successful
+
+if [ $? -eq 0 ]; then
+
+    echo "Build successful. Copying the .war file to Docker container..."
+
+  
+
+    # Copy the .war file to the Docker container
+
+    docker cp servlets/servlet/target/servlet-1.0-SNAPSHOT.war my-tomcat:/usr/local/tomcat/webapps/test.war
+
+  
+
+    echo "Copy successful."
+
+else
+
+    echo "Build failed. Please check the error messages and try again."
+
+fi
+```
