@@ -13,34 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DBA.md",
+                "file": "DBA/DBA.md",
                 "mode": "source",
                 "source": false
               }
-            }
-          },
-          {
-            "id": "6d1b91f91244e500",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "DBA-NOTES.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "983ac85abf418d6d",
-            "type": "leaf",
-            "state": {
-              "type": "mindmap",
-              "state": {}
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -106,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "DBA-NOTES.md",
+                "file": "DBA/DBA.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -123,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "DBA-NOTES.md",
+                "file": "DBA/DBA.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -146,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "DBA-NOTES.md"
+                "file": "DBA/DBA.md"
               }
             }
           },
@@ -178,10 +157,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "983ac85abf418d6d",
+  "active": "f772376c47e20296",
   "lastOpenFiles": [
-    "DBA.md",
-    "DBA-NOTES.md",
+    "DBA/DBA-NOTES&TPS.md",
+    "DBA",
+    "DBA/DBA.md",
     "Tomcat and JEE.md",
     "Amplify-Android-Auth.md",
     "V2ray.md",
