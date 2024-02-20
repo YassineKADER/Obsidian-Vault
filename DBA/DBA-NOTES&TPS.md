@@ -5,8 +5,8 @@
 
 Notes :
   - Arrêt :
-    - Abort : ==arrêt sur place ==+ possibilité ==de récupérer les données.==
-    - Immediate : ==arrêt sur place==.
+    - Abort : arrêt sur place + <mark style="background: #FFB8EBA6;">possibilité de récupérer les données</mark>.
+    - Immediate : arrêt sur place.
     - Transactional : arrêt lorsque ==la validation/annulation des transactions==.
     - Normal : quitter sur place.
   - Init.ora :
