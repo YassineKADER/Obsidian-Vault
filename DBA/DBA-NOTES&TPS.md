@@ -1,113 +1,116 @@
-- Class: DBA
-- Topic: Class Notes
-- Subtopic: Shutdown Options
+- **Classe**: DBA
+- **Sujet**: Notes de Cours
+- **Sous-thème**: Options d'Arrêt
+- [[DBA-PNOTES]]
 
-Notes:
-  - Shutdown:
-    - Abort: shutdown sur place + possibility de recuperer les donnees
-    - Immediate: shutdown sur place
-    - Transactional: shutdown when validation/annulations de transaction
-    - Normal: quitter sur place
-  - Init.ora:
-    - dba_user //database has all informations of all users
+Notes :
+  - Arrêt :
+    - Abort : ==arrêt sur place ==+ possibilité ==de récupérer les données.==
+    - Immediate : ==arrêt sur place==.
+    - Transactional : arrêt lorsque ==la validation/annulation des transactions==.
+    - Normal : quitter sur place.
+  - Init.ora :
+    - <mark style="background: #FFB86CA6;">dba_user</mark> //database contient toutes les informations de tous les utilisateurs.
 
-- SQL Queries:
-  - Question 1:
+- **Requêtes SQL** :
+  - Question 1 :
     - GRANT UPDATE (adresse) ON emp TO Ali;
     - GRANT INSERT (nemp, nom, prenom) ON emp TO Ali;
-  - Question 2:
+  - Question 2 :
     - GRANT CONNECT TO lila WITH ADMIN OPTION;
     - GRANT RESOURCE TO laila WITH ADMIN OPTION;
-  - Question 3:
+  - Question 3 :
     - CREATE ROLE R;
     - GRANT ALL PRIVILEGES ON emp TO R;
     - GRANT CREATE SESSION, CREATE ANY TABLE TO R;
-  - Question 4:
+  - Question 4 :
     - GRANT R TO Khalid WITH ADMIN OPTION;
 
-- TP 1: Gestion d’Instance et de Base de données ORACLE
-  - Startup Options:
-    - startup: Normal startup.
-    - startup nomount: Starts the instance without mounting the database.
-    - startup mount: Starts the instance and mounts the database.
-    - startup force: Starts the database even if it's in an inconsistent state.
-  - Shutdown Options:
-    - shutdown normal: Waits for active transactions to complete.
-    - shutdown immediate: Shuts down the database immediately.
-    - shutdown transactional: Shuts down after active transactions complete.
-    - shutdown abort: Shuts down the database abruptly.
-  - Connect as SYS and Stop the Database:
+- **TP 1**: Gestion d’Instance et de Base de données ORACLE
+  - Options de Démarrage :
+    - startup : <mark style="background: #FFF3A3A6;">Démarrage normal.</mark>
+    - startup nomount : Démarre l'instance <mark style="background: #BBFABBA6;">sans monter la base de données.</mark>
+    - startup mount : Démarre l'instance<mark style="background: #ABF7F7A6;"> et monte la base de données</mark>.
+    - startup force : Démarre la base de données <mark style="background: #D2B3FFA6;">même si elle est dans un état inconsistent</mark>.
+  - Options d'Arrêt :
+    - shutdown normal : Attend que <mark style="background: #ADCCFFA6;">les transactions actives se terminent</mark>.
+    - shutdown immediate : Arrête<mark style="background: #ADCCFFA6;"> immédiatement la base de données</mark>.
+    - shutdown transactional : Arrête <mark style="background: #BBFABBA6;">après la validation des transactions actives</mark>.
+    - shutdown abort : <mark style="background: #BBFABBA6;">Arrête brusquement la base de données</mark>.
+  - Se Connecter en tant que SYS et Arrêter la Base de Données :
     - sqlplus sys / as sysdba
     - shutdown;
-  - Connect as SYS and Start Database with PFILE:
+  - Se Connecter en tant que SYS et Démarrer la Base de Données avec un PFILE :
     - sqlplus sys / as sysdba
-    - startup pfile=init.ora;
-  - Stop Database and Open in Read-Only Mode:
+    - startup <mark style="background: #CACFD9A6;">pfile=init.ora</mark>;
+  - Arrêter la Base de Données et l'Ouvrir en Mode Lecture Seule :
     - shutdown immediate;
     - startup mount;
-    - alter database open read only;
-  - Connect as HR, View Table Content:
+    - alter <mark style="background: #FF5582A6;">database open read only</mark>;
+  - Se Connecter en tant que HR, Voir le Contenu de la Table :
     - sqlplus hr/hr
     - select * from regions;
-  - Insert Row into REGIONS Table as HR User:
+  - Insérer une Ligne dans la Table REGIONS en tant qu'Utilisateur HR :
     - insert into regions values (...);
-  - Switch Database to Read-Write Mode:
+  - Passer la Base de Données en Mode Lecture-Écriture :
     - shutdown immediate;
     - startup;
-  - Insert Row into REGIONS Table without Committing:
-    - Insert row without committing.
-  - Start SQL*Plus as SYSDBA and Perform Transactional Shutdown:
+  - Insérer une Ligne dans la Table REGIONS sans Commiter :
+    - Insérer une ligne sans commiter.
+  - Démarrer SQL*Plus en tant que SYSDBA et Effectuer un Arrêt Transactionnel :
     - sqlplus sys / as sysdba
     - shutdown transactional;
-  - Undo HR Session Insertion, Then Exit:
-    - Rollback insertion in HR session.
-    - Check impact in HR and SYS sessions.
-  - Connect as SYS and Start Database:
+  - Annuler l'Insertion de la Session HR, Puis Quitter :
+    - Rollback de l'insertion dans la session HR.
+    - Vérifier l'impact dans les sessions HR et SYS.
+  - Se Connecter en tant que SYS et Démarrer la Base de Données :
     - sqlplus sys / as sysdba
     - startup;
-  - Start Another Session as HR User.
-  - Enable Restricted Session as SYS User.
-  - Attempt Select Operation in HR Session.
-  - Reconnect as HR User and Observe.
-  - Disable Restricted Session as SYS User.
+  - Démarrer une Autre Session en tant qu'Utilisateur HR.
+  - Activer la Session Restreinte en tant que SYS :
+  - Tenter une Opération de Sélection dans la Session HR.
+  - Se Reconnecter en tant qu'Utilisateur HR et Observer.
+  - Désactiver la Session Restreinte en tant que SYS.
 
-- TP 1: Gestion des utilisateurs, privilèges et rôles
-  - Open SQL*Plus Session as user_isil and Display Username:
-    - Command: sqlplus user_isil/password
-    - Response: Connected to Oracle Database as USER_ISIL
-  - In user_isil Session, Check Object Privileges Granted:
-    - Command: select * from user_tab_privs;
-  - In user_isil Session, Check System Privileges Granted:
-    - Command: select * from user_sys_privs;
-  - In user_isil Session, Check Roles Granted:
-    - Command: select * from user_role_privs;
-  - Display Contents of emp_isil Table:
-    - Command: select * from emp_isil;
-  - In Nom_isil Session, Create service Table:
+- **TP 1**: Gestion des utilisateurs, privilèges et rôles
+  - Ouvrir une Session SQL*Plus en tant qu'utilisateur_isil et Afficher le Nom d'Utilisateur :
+    - Commande : sqlplus user_isil/password
+    - Réponse : Connecté à la base de données Oracle en tant qu'UTILISATEUR_ISIL
+  - Dans la Session utilisateur_isil, Vérifier les Privilèges sur les Objets Accordés :
+    - Commande : select * from user_tab_privs;
+  - Dans la Session utilisateur_isil, Vérifier les Privilèges Système Accordés :
+    - Commande : select * from user_sys_privs;
+  - Dans la Session utilisateur_isil, Vérifier les Rôles Accordés :
+    - Commande : select * from user_role_privs;
+  - Afficher le Contenu de la Table emp_isil :
+    - Commande : select * from emp_isil;
+  - Dans la Session Nom_isil, Créer la Table service :
     - create table service ( id number, libelle varchar(15) );
-  - In system Session, Remove 'CREATE TABLE' Privilege from R_isil Role:
-    - Command: revoke create table from R_isil;
-  - View Updated Privileges of R_isil Role:
-    - Command: select * from dba_sys_privs where grantee = 'R_ISIL';
-  - In Nom_isil Session, Create emp Table:
+  - Dans la Session système, Supprimer le Privilège 'CREATE TABLE' du Rôle R_isil :
+    - Commande : revoke create table from R_isil;
+  - Vérifier les Privilèges Mis à Jour du Rôle R_isil :
+    - Commande : select * from dba_sys_privs where grantee = 'R_ISIL';
+  - Dans la Session Nom_isil, Créer la Table emp :
     - create table emp ( id_emp, nom, prenom, salaire );
-  - Revoke Role from Nom_isil User:
-    - Command: revoke R_isil from Nom_isil;
-  - In Nom_isil Session, Display Granted Roles:
-    - Command: select * from session_roles;
-  - Grant R_isil Role to All Database Users:
-    - Command: grant R_isil to public;
-  - View Updated Roles Granted to Nom_isil User:
-    - Command: select * from user_role_privs where grantee = 'NOM_ISIL';
-  - Revoke Role from Nom_isil User:
-    - Command: revoke R_isil from Nom_isil;
-  - From system Session, Grant Salary Modification Right to Nom_isil User:
-    - Command: grant update (salaire) on emp_isil to Nom_isil;
-  - In Nom_isil Session, Attempt Salary Modification:
-    - Command: update emp_isil set salaire = salaire + 500 where ...;
-  - Display Column-Level Privileges Granted to Nom_isil User:
-    - Command: select table_name, column_name, privilege from user_tab_privs where grantee = 'NOM_ISIL';
+  - Révoquer le Rôle de l'Utilisateur Nom_isil :
+    - Commande : revoke R_isil from Nom_isil;
+  - Dans la Session Nom_isil, Afficher les Rôles Accordés :
+    - Commande : select * from session_roles;
+  - Accorder le Rôle R_isil à Tous les Utilisateurs de la Base de Données :
+    - Commande : grant R_isil to public;
+  - Vérifier les Rôles Mis à Jour Accordés à l'Utilisateur Nom_isil :
+    - Commande : select * from user_role_privs where grantee = 'NOM_ISIL';
+  - Révoquer le Rôle de l'Utilisateur Nom_isil :
+    - Commande : revoke R_isil from Nom_isil;
+  - Depuis la Session système, Accorder le Droit de Modification du Salaire à l'Utilisateur Nom_isil :
+    - Commande : grant update (salaire) on emp_isil to Nom_isil;
+  - Dans la Session Nom_isil, Tenter la Modification du Salaire :
+    - Commande : update emp_isil set salaire = salaire + 500 where ...;
+  - Afficher les Privilèges au Niveau des Colonnes Accordés à l'Utilisateur Nom_isil :
+    - Commande : select table_name, column_name, privilege from user_tab_privs where grantee = 'NOM_ISIL';
 
-Additional Command for User Creation:
-  - Command: CREATE USER username IDENTIFIED BY password;
-    - Replace 'username' with the desired username and 'password' with the desired password.
+Commande Additionnelle
+
+ pour la Création d'Utilisateur :
+  - Commande : CREATE USER nom_utilisateur IDENTIFIED BY mot_de_passe;
+    - Remplacez 'nom_utilisateur' par le nom d'utilisateur souhaité et 'mot_de_passe' par le mot de passe souhaité.

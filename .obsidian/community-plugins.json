@@ -6,10 +6,9 @@
   "dataview",
   "cm-editor-syntax-highlight-obsidian",
   "obsidian-emoji-toolbar",
-  "obsidian-icon-folder",
   "obsidian-kanban",
-  "obsidian-minimal-settings",
   "obsidian-outliner",
   "obsidian-tasks-plugin",
-  "obsidian-mind-map"
+  "obsidian-mind-map",
+  "highlightr-plugin"
 ]

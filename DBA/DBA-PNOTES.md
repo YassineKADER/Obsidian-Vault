@@ -1,0 +1,34 @@
+[[DBA-NOTES&TPS]]
+- **Shutdown Options**:
+    - Abort: `SHUTDOWN ABORT;`
+    - Immediate: `SHUTDOWN IMMEDIATE;`
+    - Transactional: `SHUTDOWN TRANSACTIONAL;`
+    - Normal: `SHUTDOWN NORMAL;`
+- **SQL Queries**:
+    - Granting Permissions:
+        - `GRANT UPDATE (column_name) ON table_name TO user_name;`
+        - `GRANT INSERT (column1, column2) ON table_name TO user_name;`
+    - Creating Roles: `CREATE ROLE role_name;`
+    - Granting Privileges to Roles: `GRANT privilege_name ON object_name TO role_name;`
+    - Granting Roles to Users: `GRANT role_name TO user_name;`
+- **Startup Options**:
+    - Normal startup: `STARTUP;`
+    - Startup without mounting: `STARTUP NOMOUNT;`
+    - Mount the database: `STARTUP MOUNT;`
+    - Forceful startup: `STARTUP FORCE;`
+- **User Management**:
+    - Creating Users: `CREATE USER username IDENTIFIED BY password;`
+    - Revoking Privileges: `REVOKE privilege_name ON object_name FROM user_name;`
+    - Revoking Roles from Users: `REVOKE role_name FROM user_name;`
+    - Granting Column-level Privileges: `GRANT privilege_name (column_name) ON table_name TO user_name;`
+- **PGA and SGA**:
+    - Setting Parameters in `init.ora`:
+        - `SGA_TARGET=500M;`
+        - `PGA_AGGREGATE_TARGET=200M;`
+- **Oracle Architecture**:
+    - Viewing Memory Structures:
+        - `SELECT * FROM V$SGA;`
+        - `SELECT * FROM V$PGA;`
+    - Viewing Background Processes:
+        - `SELECT * FROM V$PROCESS;`
+        - `SELECT * FROM V$SESSION;`
