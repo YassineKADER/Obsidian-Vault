@@ -13,13 +13,22 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DBA/DBA-NOTES&TPS.md",
+                "file": "DBA/DBA-PNOTES.md",
                 "mode": "source",
                 "source": false
               }
             }
+          },
+          {
+            "id": "dcba3569a9c78ad1",
+            "type": "leaf",
+            "state": {
+              "type": "mindmap",
+              "state": {}
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "DBA/DBA-NOTES&TPS.md",
+                "file": "DBA/DBA-PNOTES.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "DBA/DBA-NOTES&TPS.md",
+                "file": "DBA/DBA-PNOTES.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "DBA/DBA-NOTES&TPS.md"
+                "file": "DBA/DBA-PNOTES.md"
               }
             }
           },
