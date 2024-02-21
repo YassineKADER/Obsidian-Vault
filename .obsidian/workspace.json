@@ -4,27 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "bcb71b58d33393d1",
+        "id": "9b851520a795b082",
         "type": "tabs",
         "children": [
           {
-            "id": "f772376c47e20296",
+            "id": "63288f32a586531a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DBA/DBA-NOTES&TPS.md",
+                "file": "V2ray.md",
                 "mode": "source",
                 "source": false
               }
-            }
-          },
-          {
-            "id": "df5828cb5c86b0a3",
-            "type": "leaf",
-            "state": {
-              "type": "mindmap",
-              "state": {}
             }
           }
         ]
@@ -93,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "DBA/DBA-NOTES&TPS.md",
+                "file": "V2ray.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "DBA/DBA-NOTES&TPS.md",
+                "file": "V2ray.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "DBA/DBA-NOTES&TPS.md"
+                "file": "V2ray.md"
               }
             }
           },
@@ -165,7 +157,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "f772376c47e20296",
+  "active": "63288f32a586531a",
   "lastOpenFiles": [
     "DBA/DBA-PNOTES.md",
     "DBA/DBA-NOTES&TPS.md",
