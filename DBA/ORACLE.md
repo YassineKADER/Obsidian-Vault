@@ -132,6 +132,42 @@
 				- **Revoke** pour retirer des privilèges.
 					- Revoke liste_privilèges_système_rôles [,all privileges] From liste_utilisateurs | liste_rôles | public ;
 					- Revoke possède l'option `cascade constraints` qu'on peut utiliser pour supprimer les contraintes référentielles créées lorsque l'utilisateur a reçu l'un des privilèges : - References (X) on nom_table - References on nom_table - All on nom_table
+			- **Vues des privilèges:**
+				- **dba_sys_privs**:
+				    - Cette vue affiche les privilèges système accordés à tous les utilisateurs de la base de données.
+				- **user_sys_privs**:
+				    - Cette vue affiche les privilèges système accordés à l'utilisateur actuel.
+				- **dba_tab_privs** :
+				    - Cette vue affiche les privilèges sur les objets accordés aux rôles dans la base de données.
+				- **user_tab_privs** :
+				    - Cette vue affiche les privilèges sur les objets accordés à l'utilisateur actuel.
+				- **user_col_privs** :
+				    - Cette vue affiche les privilèges sur les colonnes accordés à l'utilisateur actuel.
+		- **Vue**:
+		  - Une vue est une table logique construite à partir d'une requête `SELECT` qui porte sur des tables et d'autres vues.
+		  - Le contenu d'une vue est dynamique, extrait des tables de base à chaque appel de la vue.
+		  - La définition d'une vue est stockée dans le dictionnaire de données (consulter `user_views`).
+		  - Les vues renforcent la confidentialité en limitant l'accès aux données obtenues à partir de leur requête.
+		  - **Confidentialité et vues**:
+		    - Une vue est considérée comme une table virtuelle car elle ne nécessite aucune allocation en mémoire pour contenir les données.
+		    - Seule la structure d'une vue est stockée dans le dictionnaire de données.
+		    - **Intérêt des vues dans la confidentialité**:
+			 - En utilisant les vues, on peut définir des restrictions d'accès aux données pour les utilisateurs.
+			  - Question 1: Accorder à `ali` un privilège lui permettant de lire uniquement le nom, le prénom et le salaire des employés.
+			  - Question 2: Accorder à `ali` un privilège pour lire seulement les informations sur les employés d'Agadir.
+			- Création de vues et gestion des privilèges**:
+			  - Pour créer une vue, il faut avoir l'un des privilèges suivants:
+			    - `CREATE VIEW` (dans son propre schéma)
+			    - `CREATE ANY VIEW` (dans un autre schéma)
+			  - Pour créer une vue: `CREATE [OR REPLACE] [FORCE | NO FORCE] VIEW nomVue [(liste De Champs)] AS requêteSélection [WITH READ ONLY];`
+			  - Pour supprimer une vue: `DROP VIEW nomVue;`
+				- **Exemples de création de vues**:
+				  - Rep1:
+				    - `CREATE VIEW vue_ali AS SELECT nom, prénom, salaire FROM emp;`
+				    - `GRANT SELECT ON vue_ali TO ali;`
+				  - Rep2:
+				    - `CREATE VIEW vue2_ali AS SELECT * FROM emp WHERE ville = 'Agadir';`
+				    - `GRANT SELECT ON vue2_ali TO ali;`
 	- [ ] Views
 	- [ ] Tablespaces
 	- 
