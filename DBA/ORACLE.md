@@ -168,14 +168,53 @@
 				  - Rep2:
 				    - `CREATE VIEW vue2_ali AS SELECT * FROM emp WHERE ville = 'Agadir';`
 				    - `GRANT SELECT ON vue2_ali TO ali;`
-		- **Tables spaces**:
-			- Tablespace SYSTEM
-				Description: Le tablespace SYSTEM est le premier tablespace créé lors de l'installation de la base de données Oracle. Il contient des objets de base de données essentiels tels que les tables et index du dictionnaire de données, les segments de rollback et le tablespace undo système.
-			- Tablespace SYSAUX
-			  Description: Le tablespace SYSAUX a été introduit dans Oracle Database 10g pour soulager la charge sur le tablespace SYSTEM en stockant des objets de base de données auxiliaires. Il contient des données pour diverses fonctionnalités et options Oracle, y compris le référentiel Oracle Enterprise Manager.
-			- Tablespace TEMP
-			   Le tablespace TEMP est utilisé pour le stockage temporaire lors d'opérations de tri, de jointures et d'autres opérations nécessitant de l'espace temporaire. Il est utilisé pour stocker les données temporaires générées par Oracle lors du traitement des requêtes.
-			- Tablespace UNDOTBS
-			  Le tablespace UNDOTBS stocke les données de rollback, qui sont utilisées pour annuler les transactions et fournir une cohérence de lecture. Il maintient un enregistrement des modifications apportées à la base de données et est crucial pour maintenir l'intégrité des données et prendre en charge la gestion des transactions.
-			- Tablespaces par défaut des utilisateurs
-			  Chaque utilisateur dans Oracle peut avoir un tablespace par défaut, qui est le tablespace où ses objets sont créés par défaut s'aucun autre tablespace n'est spécifié. Ce tablespace par défaut peut être défini au niveau de l'utilisateur en utilisant la clause DEFAULT TABLESPACE dans l'instruction CREATE USER ou en modifiant l'utilisateur avec l'instruction ALTER USER.
+		- **Tables spaces**: 
+			- Un tablespace est un conteneur de stockage logique pour des segments, qui sont les structures physiques stockant les données des tables, des index et d'autres objets de base de données. Voici quelques tablespaces par défaut couramment utilisés dans Oracle :
+				- Tablespace SYSTEM
+					Description: Le tablespace SYSTEM est le premier tablespace créé lors de l'installation de la base de données Oracle. Il contient des objets de base de données essentiels tels que les tables et index du dictionnaire de données, les segments de rollback et le tablespace undo système.
+				- Tablespace SYSAUX
+				  Description: Le tablespace SYSAUX a été introduit dans Oracle Database 10g pour soulager la charge sur le tablespace SYSTEM en stockant des objets de base de données auxiliaires. Il contient des données pour diverses fonctionnalités et options Oracle, y compris le référentiel Oracle Enterprise Manager.
+				- Tablespace TEMP
+				   Le tablespace TEMP est utilisé pour le stockage temporaire lors d'opérations de tri, de jointures et d'autres opérations nécessitant de l'espace temporaire. Il est utilisé pour stocker les données temporaires générées par Oracle lors du traitement des requêtes.
+				- Tablespace UNDOTBS
+				  Le tablespace UNDOTBS stocke les données de rollback, qui sont utilisées pour annuler les transactions et fournir une cohérence de lecture. Il maintient un enregistrement des modifications apportées à la base de données et est crucial pour maintenir l'intégrité des données et prendre en charge la gestion des transactions.
+				- Tablespaces par défaut des utilisateurs
+				  Chaque utilisateur dans Oracle peut avoir un tablespace par défaut, qui est le tablespace où ses objets sont créés par défaut s'aucun autre tablespace n'est spécifié. Ce tablespace par défaut peut être défini au niveau de l'utilisateur en utilisant la clause DEFAULT TABLESPACE dans l'instruction CREATE USER ou en modifiant l'utilisateur avec l'instruction ALTER USER.
+			- **Création d'un tablespace** :
+			    - Pour créer un tablespace, utilisez la commande `CREATE TABLESPACE`. Vous pouvez spécifier diverses options telles que la taille, l'emplacement, etc.
+				    ```sql CREATE TABLESPACE nom_tablespace   DATAFILE 'chemin_vers_le_fichier_de_données' SIZE taille   [AUTOEXTEND ON [NEXT taille_extension] [MAXSIZE taille_max]];```
+    
+- **Associer un tablespace par défaut à un utilisateur** :
+    
+    - Vous pouvez définir un tablespace par défaut pour un utilisateur en modifiant son profil ou en lui attribuant directement le tablespace.
+    
+    sqlCopy code
+    
+    `ALTER USER nom_utilisateur DEFAULT TABLESPACE nom_tablespace;`
+    
+- **Vues liées aux tablespaces** :
+    
+    - Vous pouvez utiliser des vues telles que `DBA_TABLESPACES`, `USER_TABLESPACES` pour afficher des informations sur les tablespaces de la base de données.
+- **Création d'objets sur un tablespace** :
+    
+    - Pour créer des objets (tables, index, etc.) dans un tablespace spécifique, spécifiez le nom du tablespace lors de la création de l'objet.
+    
+    sqlCopy code
+    
+    `CREATE TABLE nom_table (...)   TABLESPACE nom_tablespace;`
+    
+- **Suppression d'un tablespace avec ses objets** :
+    
+    - Pour supprimer un tablespace avec tous ses objets, utilisez la commande `DROP TABLESPACE` avec l'option `INCLUDING CONTENTS AND DATAFILES`.
+    
+    sqlCopy code
+    
+    `DROP TABLESPACE nom_tablespace INCLUDING CONTENTS AND DATAFILES;`
+    
+- **Gestion des quotas de tablespace** :
+    
+    - Vous pouvez définir des quotas sur les tablespaces pour limiter la quantité de stockage qu'un utilisateur peut utiliser dans un tablespace donné.
+    
+    sqlCopy code
+    
+    `ALTER USER nom_utilisateur QUOTA taille_sur_tablespace ON nom_tablespace;`
