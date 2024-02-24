@@ -114,7 +114,7 @@
 					- Un privilège est un droit qui permet à la personne dont dispose de réaliser une opération déterminée sur une BD.
 					- **Previliges deux types**:
 						- <mark style="background: #FF5582A6;">Privilège objet</mark> attaché à un objet de BD
-						- <mark style="background: #FF5582A6;">Privilège système</mark> concerne l'ensemble de la BD
+						- <mark style="background: #FF5582A6;">Privilège système</mark> concerne l'ensemble de la BD Ex: `create session`, `create table`, `create user`, `select any table`
 				- Notion de rôle:
 					- Un rôle est un ensemble de privilèges caractérisé par un nom peut etre prédéfini ou créé example (Dba, Connect, Resource)
 					- Pour Creer un role:
