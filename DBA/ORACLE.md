@@ -143,7 +143,7 @@
 				    - Cette vue affiche les privilèges sur les objets accordés à l'utilisateur actuel.
 				- **user_col_privs** :
 				    - Cette vue affiche les privilèges sur les colonnes accordés à l'utilisateur actuel.
-		- **Vue**:
+		- **Vue**s:
 		  - Une vue est une table logique construite à partir d'une requête `SELECT` qui porte sur des tables et d'autres vues.
 		  - Le contenu d'une vue est dynamique, extrait des tables de base à chaque appel de la vue.
 		  - La définition d'une vue est stockée dans le dictionnaire de données (consulter `user_views`).
@@ -161,13 +161,12 @@
 			    - `CREATE ANY VIEW` (dans un autre schéma)
 			  - Pour créer une vue: `CREATE [OR REPLACE] [FORCE | NO FORCE] VIEW nomVue [(liste De Champs)] AS requêteSélection [WITH READ ONLY];`
 			  - Pour supprimer une vue: `DROP VIEW nomVue;`
-				- **Exemples de création de vues**:
+			- **Exemples de création de vues**:
 				  - Rep1:
 				    - `CREATE VIEW vue_ali AS SELECT nom, prénom, salaire FROM emp;`
 				    - `GRANT SELECT ON vue_ali TO ali;`
 				  - Rep2:
 				    - `CREATE VIEW vue2_ali AS SELECT * FROM emp WHERE ville = 'Agadir';`
 				    - `GRANT SELECT ON vue2_ali TO ali;`
-	- [ ] Views
-	- [ ] Tablespaces
-	- 
+		- **Tables spaces**:
+			- 
