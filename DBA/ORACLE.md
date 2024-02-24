@@ -169,4 +169,13 @@
 				    - `CREATE VIEW vue2_ali AS SELECT * FROM emp WHERE ville = 'Agadir';`
 				    - `GRANT SELECT ON vue2_ali TO ali;`
 		- **Tables spaces**:
-			- 
+			- Tablespace SYSTEM
+				Description: Le tablespace SYSTEM est le premier tablespace créé lors de l'installation de la base de données Oracle. Il contient des objets de base de données essentiels tels que les tables et index du dictionnaire de données, les segments de rollback et le tablespace undo système.
+			- Tablespace SYSAUX
+			  Description: Le tablespace SYSAUX a été introduit dans Oracle Database 10g pour soulager la charge sur le tablespace SYSTEM en stockant des objets de base de données auxiliaires. Il contient des données pour diverses fonctionnalités et options Oracle, y compris le référentiel Oracle Enterprise Manager.
+			- Tablespace TEMP
+			   Le tablespace TEMP est utilisé pour le stockage temporaire lors d'opérations de tri, de jointures et d'autres opérations nécessitant de l'espace temporaire. Il est utilisé pour stocker les données temporaires générées par Oracle lors du traitement des requêtes.
+			- Tablespace UNDOTBS
+			  Le tablespace UNDOTBS stocke les données de rollback, qui sont utilisées pour annuler les transactions et fournir une cohérence de lecture. Il maintient un enregistrement des modifications apportées à la base de données et est crucial pour maintenir l'intégrité des données et prendre en charge la gestion des transactions.
+			- Tablespaces par défaut des utilisateurs
+			  Chaque utilisateur dans Oracle peut avoir un tablespace par défaut, qui est le tablespace où ses objets sont créés par défaut s'aucun autre tablespace n'est spécifié. Ce tablespace par défaut peut être défini au niveau de l'utilisateur en utilisant la clause DEFAULT TABLESPACE dans l'instruction CREATE USER ou en modifiant l'utilisateur avec l'instruction ALTER USER.
