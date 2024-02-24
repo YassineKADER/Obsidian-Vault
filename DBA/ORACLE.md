@@ -131,3 +131,7 @@
 						- `Grant select on emp to ali; Grant select (nemp) on emp to ali; Grant insert (nemp, nom), update (salaire) on emp to ali, R;`
 				- **Revoke** pour retirer des privilèges.
 					- Revoke liste_privilèges_système_rôles [,all privileges] From liste_utilisateurs | liste_rôles | public ;
+					- Revoke possède l'option `cascade constraints` qu'on peut utiliser pour supprimer les contraintes référentielles créées lorsque l'utilisateur a reçu l'un des privilèges : - References (X) on nom_table - References on nom_table - All on nom_table
+	- [ ] Views
+	- [ ] Tablespaces
+	- 
