@@ -65,4 +65,69 @@
 				        - Les séquences sont également associées à un schéma.
 				        - 
 	- **Administration des bases de données:**
-		- 
+		- **Gestion D'Instance**:
+			- **Démarrage** :
+				1. **Nomount** :
+				    - L'étape de démarrage où l'instance est démarrée mais la base de données n'est pas ouverte et aucun fichier de contrôle n'est monté.
+				    - Commande : `STARTUP NOMOUNT;`
+				2. **Mount** :
+				    - L'étape de démarrage où l'instance est démarrée et les fichiers de contrôle sont montés, mais la base de données n'est pas ouverte pour les utilisateurs.
+				    - Commande : `STARTUP MOUNT;`
+				3. **Open** :
+				    - L'étape de démarrage où l'instance est démarrée, les fichiers de contrôle sont montés et la base de données est ouverte pour les utilisateurs.
+				    - Commande : `STARTUP OPEN;`
+				- `STARTUP`(Only): Tente de démarrer l'instance de base de données en fonction de son état actuel (montage, ouverture, etc.).
+			- **Arrêt** :
+				1. **Shutdown Immediate** :
+				    - Arrête immédiatement l'instance de la base de données en arrêtant toutes les sessions en cours et en libérant les ressources.
+				    - Commande : `SHUTDOWN IMMEDIATE;`
+				2. **Shutdown Transactional** :
+				    - Attend que toutes les transactions en cours soient terminées avant de fermer l'instance.
+				    - Commande : `SHUTDOWN TRANSACTIONAL;`
+				3. **Shutdown Normal** :
+				    - Attend que toutes les sessions actives se terminent normalement avant de fermer l'instance.
+				    - Commande : `SHUTDOWN NORMAL;`
+				4. **Shutdown Abort** :
+				    - Arrête immédiatement l'instance de la base de données sans attendre la fin des transactions en cours.
+				    - Commande : `SHUTDOWN ABORT;`
+				- `SHUTDOWN`(Only): Tente d'arrêter l'instance de base de données en fonction du mode de fermeture configuré (immédiat, transactionnel, normal, etc.).
+		- **Gestion des Utilisateurs**: 
+			- **Création d'un utilisateur** :
+			  - `CREATE USER nom_utilisateur IDENTIFIED BY mot_de_passe [QUOTA unlimited | taille M | G | K ON nom_tablespace] [ACCOUNT UNLOCK | LOCK] [DEFAULT TABLESPACE nom_tablespace] [TEMPORARY TABLESPACE nom_tablespace]`
+			- **Modification d'un utilisateur** :
+			  - `ALTER USER nom_utilisateur IDENTIFIED BY mot_de_passe [QUOTA unlimited | taille M | G | K ON nom_tablespace] [DEFAULT TABLESPACE] [ACCOUNT UNLOCK | LOCK]`
+			- **Verrouillage / déverrouillage d'un utilisateur** :
+			  - `ALTER USER nom_utilisateur ACCOUNT LOCK | UNLOCK`
+			- **Suppression d'un utilisateur** :
+			  - `DROP USER nom_utilisateur`
+			  - `DROP USER` command with the `CASCADE` option. This will drop the user and all objects owned by the user.
+			- **Utilisation des vues** `ALL_USERS` ou `DBA_USERS` :
+			  - Exemple : `SELECT username FROM all_users;`
+			- **Connaître les utilisateurs** :
+			  - Afficher l'utilisateur de la session en cours : `SHOW USER`
+			- **Changer le mot de passe** :
+			  - `PASSWORD` et suivez les messages du système.
+		- **Gestion des privilèges et rôles:**
+			- **Definition**:
+				- Priviliges:
+					- Un privilège est un droit pour accéder à un objet de base de données (table, vue, …) ou exécuter une commande SQL.
+					- Un privilège est un droit qui permet à la personne dont dispose de réaliser une opération déterminée sur une BD.
+					- **Previliges deux types**:
+						- <mark style="background: #FF5582A6;">Privilège objet</mark> attaché à un objet de BD
+						- <mark style="background: #FF5582A6;">Privilège système</mark> concerne l'ensemble de la BD
+				- Notion de rôle:
+					- Un rôle est un ensemble de privilèges caractérisé par un nom peut etre prédéfini ou créé example (Dba, Connect, Resource)
+					- Pour Creer un role:
+						- `Create Role role_name;
+			- **Grant** & **Revoke**:
+				- **Grant** pour accorder des privilèges
+					- `Grant liste_privilèges_objets on liste_objets to liste_utilisateurs_rôles ;`
+					- ``Grant liste_privilèges_système_rôles to liste_utilisateurs_rôles;``
+					- Le privilège `grant any privileges` autorise à son possesseur d'accorder tout privilège système.
+					- Le privilège `grant any object privileges` autorise à son possesseur d'accorder tout privilège objet.
+					- `With admin option` permet au récepteur des privilèges système ou rôles de les transmettre aux autres utilisateurs. `With grant option` permet au récepteur des privilèges objet de les transmettre aux autres utilisateurs.
+					- `Grant create session, resource to ali identified by ali;` Si l'utilisateur n'existe pas il sera créé avec les privilèges indiqués dans la commande.
+					- Examples: 
+						- `Grant select on emp to ali; Grant select (nemp) on emp to ali; Grant insert (nemp, nom), update (salaire) on emp to ali, R;`
+				- **Revoke** pour retirer des privilèges.
+					- Revoke liste_privilèges_système_rôles [,all privileges] From liste_utilisateurs | liste_rôles | public ;
