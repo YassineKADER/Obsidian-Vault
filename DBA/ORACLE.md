@@ -198,4 +198,21 @@
 			    - Vous pouvez définir des quotas sur les tablespaces pour limiter la quantité de stockage qu'un utilisateur peut utiliser dans un tablespace donné.
 				    `ALTER USER nom_utilisateur QUOTA taille_sur_tablespace ON nom_tablespace;`
 		- **Profiles**:
-			- jjj
+			- **Profil** :
+			    - Un profil est un ensemble de limites et de paramètres qui contrôlent les ressources disponibles pour un utilisateur de la base de données Oracle.
+			- **Création d'un Profil** :
+			    - Pour créer un profil, utilisez la commande `CREATE PROFILE`. Vous pouvez spécifier des limites telles que le temps de connexion, le nombre de sessions, la consommation CPU, etc.
+			      `CREATE PROFILE nom_profil LIMIT {parameter [VALUE] | DEFAULT};`
+			- **Assignation d'un Profil à un Utilisateur** :
+			    - Vous pouvez assigner un profil à un utilisateur lors de sa création en utilisant la clause `PROFILE` dans l'instruction `CREATE USER`, ou ultérieurement en utilisant la commande `ALTER USER`.
+			      `CREATE USER nom_utilisateur IDENTIFIED BY mot_de_passe PROFILE nom_profil;`
+			      `ALTER USER nom_utilisateur PROFILE nom_profil;`
+			- **Vues liées aux Profils** :
+			    - Vous pouvez utiliser des vues telles que `DBA_PROFILES` ou `USER_PROFILES` pour afficher des informations sur les profils de la base de données.
+			- **Modification d'un Profil** :
+			    - Pour modifier un profil existant, utilisez la commande `ALTER PROFILE`. Vous pouvez ajuster les limites et les paramètres selon les besoins.
+			      `ALTER PROFILE nom_profil LIMIT {parameter [VALUE] | DEFAULT};`
+			- **Suppression d'un Profil** :
+			    - Pour supprimer un profil, utilisez la commande `DROP PROFILE`.
+			      `DROP PROFILE nom_profil;`
+		- **Gestion des Ressources et de la Sécurité**

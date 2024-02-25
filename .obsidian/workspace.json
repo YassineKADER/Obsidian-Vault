@@ -4,55 +4,34 @@
     "type": "split",
     "children": [
       {
-        "id": "8b478696c1e5b31a",
-        "type": "split",
+        "id": "9b851520a795b082",
+        "type": "tabs",
         "children": [
           {
-            "id": "9b851520a795b082",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "19daa15bfbc447a2",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "DBA/ORACLE.md",
-                    "mode": "source",
-                    "source": false
-                  }
-                }
-              },
-              {
-                "id": "63288f32a586531a",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "DBA/DBA-NOTES&TPS.md",
-                    "mode": "source",
-                    "source": false
-                  }
-                }
+            "id": "19daa15bfbc447a2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "DBA/ORACLE.md",
+                "mode": "source",
+                "source": false
               }
-            ]
+            }
           },
           {
-            "id": "f96f99162485a559",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "8225897046f55b13",
-                "type": "leaf",
-                "state": {
-                  "type": "mindmap",
-                  "state": {}
-                }
+            "id": "63288f32a586531a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "DBA/DBA-NOTES&TPS.md",
+                "mode": "source",
+                "source": false
               }
-            ]
+            }
           }
-        ],
-        "direction": "horizontal"
+        ]
       }
     ],
     "direction": "vertical"
@@ -194,8 +173,8 @@
   "active": "19daa15bfbc447a2",
   "lastOpenFiles": [
     "DBA/DBA-NOTES&TPS.md",
-    "DBA/DBA-PNOTES.md",
     "DBA/ORACLE.md",
+    "DBA/DBA-PNOTES.md",
     "DBA/Pasted image 20240224154828.png",
     "DBA/Pasted image 20240224153247.png",
     "DBA/Pasted image 20240224150645.png",
