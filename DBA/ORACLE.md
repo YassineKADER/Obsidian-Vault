@@ -50,17 +50,17 @@
 
         - <mark style="background: #FFF3A3A6;">Fichier De Base Des Donnees</mark>:
 
-          - <mark style="background: #FFB8EBA6;">Fichier des données</mark> (Data Files) : Contient les données de la base de données, y compris les tables, les index et les partitions.
+          - <mark style="background: #FFB8EBA6;">Fichier des données</mark> (Data Files) : <mark class="hltr-purple">Contient les données de la base de données</mark>, y compris les tables, les index et les partitions.
 
-          - <mark style="background: #FFB8EBA6;">Fichier des contrôles</mark> (Control Files) : Fichiers de métadonnées critiques contenant des informations sur la structure de la base de données, tels que les noms et emplacements des fichiers de données et des fichiers de journal.
+          - <mark style="background: #FFB8EBA6;">Fichier des contrôles</mark> (Control Files) : Fichiers de <mark class="hltr-yellow">métadonnées critiques</mark> contenant des <mark class="hltr-cyan">informations sur la structure</mark> de la base de données, tels que les <mark class="hltr-blue">noms</mark> et <mark class="hltr-blue">emplacements</mark> des fichiers de données et des fichiers de journal.
 
           - <mark style="background: #FFB8EBA6;">Fichier de journalisation</mark> (Redo Log File) : Enregistre les modifications apportées aux données de la base de données pour permettre la récupération en cas de panne.
 
-        - <mark style="background: #FFF3A3A6;">Fichier de paramètres</mark> (Parameter File) : Définit les paramètres d'initialisation pour l'instance de base de données Oracle.
+        - <mark style="background: #FFF3A3A6;">Fichier de paramètres</mark> (Parameter File) : Définit les <mark class="hltr-green">paramètres d'initialisation</mark> pour <mark class="hltr-purple">l'instance de base de données Oracle</mark>.
 
-        - <mark style="background: #FFF3A3A6;">Fichier des mots de passe</mark> (Password File) : Stocke les informations d'authentification nécessaires pour la connexion aux bases de données Oracle à l'aide d'identifiants sécurisés.
+        - <mark style="background: #FFF3A3A6;">Fichier des mots de passe</mark> (Password File) : <mark class="hltr-cyan">Stocke les informations d'authentification nécessaires pour la connexion</mark> aux bases de données Oracle à <mark class="hltr-grey">l'aide d'identifiants sécurisés</mark>.
 
-        - <mark style="background: #FFF3A3A6;">Fichier de journalisation archivé</mark> (Archived Redo Log File) : Une copie archivée des fichiers de journalisation, utilisée pour la récupération à un point antérieur dans le temps, nécessaire lors de la restauration depuis une sauvegarde jusqu'à un point de récupération spécifique.
+        - <mark style="background: #FFF3A3A6;">Fichier de journalisation archivé</mark> (Archived Redo Log File) : <mark class="hltr-green">Une copie archivée des fichiers de journalisation</mark>, utilisée pour <mark class="hltr-cyan">la récupération à un point antérieur dans le temps</mark>, <mark class="hltr-blue">nécessaire lors de la restauration depuis une sauvegarde jusqu'à un point de récupération spécifique.</mark>
 
       - **Structure Logique:**
 

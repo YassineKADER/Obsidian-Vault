@@ -18,8 +18,17 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "36c9f70b744c2fe2",
+            "type": "leaf",
+            "state": {
+              "type": "mindmap",
+              "state": {}
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
