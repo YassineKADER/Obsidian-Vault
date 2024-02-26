@@ -69,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "f028a7507d416ab7",
@@ -160,9 +161,9 @@
   "active": "d2d8fb81f2ba6691",
   "lastOpenFiles": [
     "DBA/DBA-PNOTES.md",
+    "DBA/ORACLE.md",
     "Untitled 1.md",
     "Untitled.md",
-    "DBA/ORACLE.md",
     "Tomcat and JEE.md",
     "DBA/DBA-NOTES&TPS.md",
     "DBA/Pasted image 20240224154828.png",

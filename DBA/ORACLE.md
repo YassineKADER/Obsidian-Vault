@@ -1,217 +1,435 @@
+  
 
 - **Serveur Oracle:** C’est un système de<mark style="background: #FFB86CA6;"> gestion de base de données</mark> qui offre une méthode de <mark style="background: #FFB86CA6;">gestion des informations</mark>, ouverte, complète et intégrée
-	- **Architechteur De Serveur Oracle**:
-		- **Un serveur Oracle** est composé d'une <mark style="background: #ABF7F7A6;">instance Oracle</mark> et d'une <mark style="background: #ABF7F7A6;">base de données Oracle</mark>.
-			- **Instance Oracle:**  La combinaison <mark style="background: #D2B3FFA6;">des processus d'arrière-plan</mark> et <mark style="background: #D2B3FFA6;">des structures mémoire</mark>. Il est nécessaire de <mark style="background: #FF5582A6;">démarrer l'instance pour accéder</mark> aux données de la base.![[Pasted image 20240224153247.png]]
-				- **Structures Memoire** :
-					- <mark style="background: #FF5582A6;">SGA</mark> (System Global Area) est une zone de **mémoire** partagée dans Oracle qui stocke des données et des contrôles nécessaires pour le fonctionnement de l'instance de base de données.
-						- <mark style="background: #FFF3A3A6;">La Buffer Cache</mark> (Cache tampon) : Stocke les copies en mémoire des blocs de données lus depuis les fichiers de données, réduisant ainsi les accès disque utilise algorithme **LRU**.
-						- <mark style="background: #FFF3A3A6;">La Shared Pool </mark>(Piscine partagée) : 
-							- <mark style="background: #BBFABBA6;">Cache de la bibliothèque</mark> (Library Cache) : Contient les déclarations SQL mises en cache ainsi que leurs plans d'exécution.
-							- <mark style="background: #BBFABBA6;">Cache du dictionnaire de données</mark> : Stocke les informations de métadonnées en cache sur les objets de la base de données et leurs définitions(Meta Data About Objects).
-						- <mark style="background: #FFF3A3A6;">La Redo Log Buffer</mark> (Tampon de journal de transactions) : Temporairement stocke les informations de journal de transactions avant qu'elles ne soient écrites dans les fichiers de journal de transactions.
-						- <mark style="background: #FFF3A3A6;">Le Large Pool</mark> : Une mémoire optionnelle utilisée pour les opérations de sauvegarde et de restauration, le tri mémoire pour les opérations de tri de grande taille, ainsi que pour d'autres fonctions système.
-						- <mark style="background: #FFF3A3A6;">Le Java Pool</mark> : Stocke les objets Java chargés dans la base de données Oracle.
-					- <mark style="background: #FF5582A6;">PGA</mark> (Program Global Area) est une région de mémoire dans Oracle dédiée au stockage des données et des structures de contrôle pour chaque session ou processus de base de données individuel.![[Pasted image 20240224154828.png]]
-				- **Processus Oracle** :
-					- **<mark style="background: #CACFD9A6;">Processus utilisateur</mark>**, qui est démarré au moment où un utilisateur de la base de données tente de se connecter au serveur Oracle, demende interaction avec serveur oracle, etablir la connexion 
-					- <mark style="background: #CACFD9A6;">Processus serveur</mark>, qui établit la connexion à l'instance Oracle et démarre lorsqu'un utilisateur ouvre une session, qui entre directement en interaction avec le serveur oracle, il peut s'agit d'un serveur dédié, ou partager
-					- <mark style="background: #CACFD9A6;">Processus d'arrière-plan</mark>, lancés au démarrage d'une instance Oracle.
-						- **DBWn** (<mark style="background: #FFB8EBA6;">Database writer</mark>) : Écriture des données modifiées depuis le cache tampon dans les fichiers de données lorsque les seuils de déclenchement sont atteints.
-						- **LGWR** (<mark style="background: #FF5582A6;">Log Writer</mark>) : Écriture des informations de journal de transactions dans les fichiers de journal pour garantir la cohérence et la récupération des transactions.
-						- **SMON** (<mark style="background: #FFB86CA6;">System Monitor</mark>) : Gère les tâches de maintenance et de récupération du système, comme la récupération après une panne et la gestion de l'instance.
-						- **PMON** (<mark style="background: #BBFABBA6;">Process Monitor</mark>) : Surveille les processus utilisateurs et système, nettoie les ressources des processus en échec et gère les connexions clients.
-						- **CKPT** (<mark style="background: #D2B3FFA6;">Checkpoint</mark>) : Marque les points de contrôle dans les fichiers de journal pour indiquer la position jusqu'à laquelle les données ont été écrites sur le disque.
-			- **Base de données Oracle :** Constituée de <mark style="background: #D2B3FFA6;">fichiers système</mark>, appelés<mark style="background: #D2B3FFA6;"> fichiers de base de données</mark>, qui stockent <mark style="background: #ADCCFFA6;">physiquement les données de la base</mark>.
-				- <mark style="background: #FFF3A3A6;">Fichier De Base Des Donnees</mark>:
-					- <mark style="background: #FFB8EBA6;">Fichier des données</mark> (Data Files) : Contient les données de la base de données, y compris les tables, les index et les partitions.
-					- <mark style="background: #FFB8EBA6;">Fichier des contrôles</mark> (Control Files) : Fichiers de métadonnées critiques contenant des informations sur la structure de la base de données, tels que les noms et emplacements des fichiers de données et des fichiers de journal.
-					- <mark style="background: #FFB8EBA6;">Fichier de journalisation</mark> (Redo Log File) : Enregistre les modifications apportées aux données de la base de données pour permettre la récupération en cas de panne.
-				- <mark style="background: #FFF3A3A6;">Fichier de paramètres</mark> (Parameter File) : Définit les paramètres d'initialisation pour l'instance de base de données Oracle.
-				- <mark style="background: #FFF3A3A6;">Fichier des mots de passe</mark> (Password File) : Stocke les informations d'authentification nécessaires pour la connexion aux bases de données Oracle à l'aide d'identifiants sécurisés.
-				- <mark style="background: #FFF3A3A6;">Fichier de journalisation archivé</mark> (Archived Redo Log File) : Une copie archivée des fichiers de journalisation, utilisée pour la récupération à un point antérieur dans le temps, nécessaire lors de la restauration depuis une sauvegarde jusqu'à un point de récupération spécifique.
-			- **Structure Logique:** 
-				- - **Schéma (Schema)** :
-				    - Contient des objets de base de données tels que des tables, des vues, des index, etc.
-				    - Les schémas sont logiquement distincts les uns des autres et peuvent être associés à des utilisateurs spécifiques.
-				- **Espace de Tables (Tablespace)** :
-				    - Contient des segments qui, à leur tour, contiennent des extents, qui contiennent des blocs.
-				    - Les tablespaces sont des unités logiques de stockage qui regroupent les objets de la base de données physiquement associés.
-				    - **Segment** :
-				        - Contient des extents.
-				        - **Extent (Etendue)** :
-				            - Contient des blocs.
-				            - **Block (Bloc)** :
-				                - La plus petite unité de stockage dans Oracle.
-				- **Fichier de Données (Data File)** :
-				    - Stocke les données des objets de la base de données.
-				    - Chaque fichier de données appartient à un tablespace spécifique.
-				- **Objets de la Base de Données** :
-				    - Ce sont les structures qui stockent, organisent et manipulent les données dans Oracle.
-				    - **Table** :
-				        - Un type d'objet de base de données qui contient les données dans des lignes et des colonnes.
-				        - Les tables sont contenues dans un schéma.
-				    - **Vue (View)** :
-				        - Une représentation virtuelle des données stockées dans une ou plusieurs tables.
-				        - Les vues sont également contenues dans un schéma.
-				    - **Index** :
-				        - Une structure de données utilisée pour accélérer la recherche des données.
-				        - Les index sont associés à une table spécifique dans un schéma.
-				    - **Procédures Stockées (Stored Procedures)** :
-				        - Ensemble d'instructions SQL et PL/SQL nommées et stockées dans la base de données.
-				        - Les procédures stockées résident dans un schéma.
-				    - **Séquence (Sequence)** :
-				        - Un objet de base de données utilisé pour générer des nombres séquentiels uniques.
-				        - Les séquences sont également associées à un schéma.
-				        - 
-	- **Administration des bases de données:**
-		- **Gestion D'Instance**:
-			- **Démarrage** :
-				1. **Nomount** :
-				    - L'étape de démarrage où l'instance est démarrée mais la base de données n'est pas ouverte et aucun fichier de contrôle n'est monté.
-				    - Commande : `STARTUP NOMOUNT;`
-				2. **Mount** :
-				    - L'étape de démarrage où l'instance est démarrée et les fichiers de contrôle sont montés, mais la base de données n'est pas ouverte pour les utilisateurs.
-				    - Commande : `STARTUP MOUNT;`
-				3. **Open** :
-				    - L'étape de démarrage où l'instance est démarrée, les fichiers de contrôle sont montés et la base de données est ouverte pour les utilisateurs.
-				    - Commande : `STARTUP OPEN;`
-				- `STARTUP`(Only): Tente de démarrer l'instance de base de données en fonction de son état actuel (montage, ouverture, etc.).
-			- **Arrêt** :
-				1. **Shutdown Immediate** :
-				    - Arrête immédiatement l'instance de la base de données en arrêtant toutes les sessions en cours et en libérant les ressources.
-				    - Commande : `SHUTDOWN IMMEDIATE;`
-				2. **Shutdown Transactional** :
-				    - Attend que toutes les transactions en cours soient terminées avant de fermer l'instance.
-				    - Commande : `SHUTDOWN TRANSACTIONAL;`
-				3. **Shutdown Normal** :
-				    - Attend que toutes les sessions actives se terminent normalement avant de fermer l'instance.
-				    - Commande : `SHUTDOWN NORMAL;`
-				4. **Shutdown Abort** :
-				    - Arrête immédiatement l'instance de la base de données sans attendre la fin des transactions en cours.
-				    - Commande : `SHUTDOWN ABORT;`
-				- `SHUTDOWN`(Only): Tente d'arrêter l'instance de base de données en fonction du mode de fermeture configuré (immédiat, transactionnel, normal, etc.).
-		- **Gestion des Utilisateurs**: 
-			- **Création d'un utilisateur** :
-			  - `CREATE USER nom_utilisateur IDENTIFIED BY mot_de_passe [QUOTA unlimited | taille M | G | K ON nom_tablespace] [ACCOUNT UNLOCK | LOCK] [DEFAULT TABLESPACE nom_tablespace] [TEMPORARY TABLESPACE nom_tablespace]`
-			- **Modification d'un utilisateur** :
-			  - `ALTER USER nom_utilisateur IDENTIFIED BY mot_de_passe [QUOTA unlimited | taille M | G | K ON nom_tablespace] [DEFAULT TABLESPACE] [ACCOUNT UNLOCK | LOCK]`
-			- **Verrouillage / déverrouillage d'un utilisateur** :
-			  - `ALTER USER nom_utilisateur ACCOUNT LOCK | UNLOCK`
-			- **Suppression d'un utilisateur** :
-			  - `DROP USER nom_utilisateur`
-			  - `DROP USER` command with the `CASCADE` option. This will drop the user and all objects owned by the user.
-			- **Utilisation des vues** `ALL_USERS` ou `DBA_USERS` :
-			  - Exemple : `SELECT username FROM all_users;`
-			- **Connaître les utilisateurs** :
-			  - Afficher l'utilisateur de la session en cours : `SHOW USER`
-			- **Changer le mot de passe** :
-			  - `PASSWORD` et suivez les messages du système.
-		- **Gestion des privilèges et rôles:**
-			- **Definition**:
-				- Priviliges:
-					- Un privilège est un droit pour accéder à un objet de base de données (table, vue, …) ou exécuter une commande SQL.
-					- Un privilège est un droit qui permet à la personne dont dispose de réaliser une opération déterminée sur une BD.
-					- **Previliges deux types**:
-						- <mark style="background: #FF5582A6;">Privilège objet</mark> attaché à un objet de BD
-						- <mark style="background: #FF5582A6;">Privilège système</mark> concerne l'ensemble de la BD Ex: `create session`, `create table`, `create user`, `select any table`
-				- Notion de rôle:
-					- Un rôle est un ensemble de privilèges caractérisé par un nom peut etre prédéfini ou créé example (Dba, Connect, Resource)
-					- Pour Creer un role:
-						- `Create Role role_name;
-			- **Grant** & **Revoke**:
-				- **Grant** pour accorder des privilèges
-					- `Grant liste_privilèges_objets on liste_objets to liste_utilisateurs_rôles ;`
-					- ``Grant liste_privilèges_système_rôles to liste_utilisateurs_rôles;``
-					- Le privilège `grant any privileges` autorise à son possesseur d'accorder tout privilège système.
-					- Le privilège `grant any object privileges` autorise à son possesseur d'accorder tout privilège objet.
-					- `With admin option` permet au récepteur des privilèges système ou rôles de les transmettre aux autres utilisateurs. `With grant option` permet au récepteur des privilèges objet de les transmettre aux autres utilisateurs.
-					- `Grant create session, resource to ali identified by ali;` Si l'utilisateur n'existe pas il sera créé avec les privilèges indiqués dans la commande.
-					- Examples: 
-						- `Grant select on emp to ali; Grant select (nemp) on emp to ali; Grant insert (nemp, nom), update (salaire) on emp to ali, R;`
-				- **Revoke** pour retirer des privilèges.
-					- Revoke liste_privilèges_système_rôles [,all privileges] From liste_utilisateurs | liste_rôles | public ;
-					- Revoke possède l'option `cascade constraints` qu'on peut utiliser pour supprimer les contraintes référentielles créées lorsque l'utilisateur a reçu l'un des privilèges : - References (X) on nom_table - References on nom_table - All on nom_table
-			- **Vues des privilèges:**
-				- **dba_sys_privs**:
-				    - Cette vue affiche les privilèges système accordés à tous les utilisateurs de la base de données.
-				- **user_sys_privs**:
-				    - Cette vue affiche les privilèges système accordés à l'utilisateur actuel.
-				- **dba_tab_privs** :
-				    - Cette vue affiche les privilèges sur les objets accordés aux rôles dans la base de données.
-				- **user_tab_privs** :
-				    - Cette vue affiche les privilèges sur les objets accordés à l'utilisateur actuel.
-				- **user_col_privs** :
-				    - Cette vue affiche les privilèges sur les colonnes accordés à l'utilisateur actuel.
-		- **Vues**:
-		  - Une vue est une table logique construite à partir d'une requête `SELECT` qui porte sur des tables et d'autres vues.
-		  - Le contenu d'une vue est dynamique, extrait des tables de base à chaque appel de la vue.
-		  - La définition d'une vue est stockée dans le dictionnaire de données (consulter `user_views`).
-		  - Les vues renforcent la confidentialité en limitant l'accès aux données obtenues à partir de leur requête.
-		  - **Confidentialité et vues**:
-		    - Une vue est considérée comme une table virtuelle car elle ne nécessite aucune allocation en mémoire pour contenir les données.
-		    - Seule la structure d'une vue est stockée dans le dictionnaire de données.
-		    - **Intérêt des vues dans la confidentialité**:
-			 - En utilisant les vues, on peut définir des restrictions d'accès aux données pour les utilisateurs.
-			  - Question 1: Accorder à `ali` un privilège lui permettant de lire uniquement le nom, le prénom et le salaire des employés.
-			  - Question 2: Accorder à `ali` un privilège pour lire seulement les informations sur les employés d'Agadir.
-			- Création de vues et gestion des privilèges**:
-			  - Pour créer une vue, il faut avoir l'un des privilèges suivants:
-			    - `CREATE VIEW` (dans son propre schéma)
-			    - `CREATE ANY VIEW` (dans un autre schéma)
-			  - Pour créer une vue: `CREATE [OR REPLACE] [FORCE | NO FORCE] VIEW nomVue [(liste De Champs)] AS requêteSélection [WITH READ ONLY];`
-			  - Pour supprimer une vue: `DROP VIEW nomVue;`
-			- **Exemples de création de vues**:
-				  - Rep1:
-				    - `CREATE VIEW vue_ali AS SELECT nom, prénom, salaire FROM emp;`
-				    - `GRANT SELECT ON vue_ali TO ali;`
-				  - Rep2:
-				    - `CREATE VIEW vue2_ali AS SELECT * FROM emp WHERE ville = 'Agadir';`
-				    - `GRANT SELECT ON vue2_ali TO ali;`
-		- **Tables spaces**: 
-			- Un tablespace est un conteneur de stockage logique pour des segments, qui sont les structures physiques stockant les données des tables, des index et d'autres objets de base de données. Voici quelques tablespaces par défaut couramment utilisés dans Oracle :
-				- Tablespace SYSTEM
-					Description: Le tablespace SYSTEM est le premier tablespace créé lors de l'installation de la base de données Oracle. Il contient des objets de base de données essentiels tels que les tables et index du dictionnaire de données, les segments de rollback et le tablespace undo système.
-				- Tablespace SYSAUX
-				  Description: Le tablespace SYSAUX a été introduit dans Oracle Database 10g pour soulager la charge sur le tablespace SYSTEM en stockant des objets de base de données auxiliaires. Il contient des données pour diverses fonctionnalités et options Oracle, y compris le référentiel Oracle Enterprise Manager.
-				- Tablespace TEMP
-				   Le tablespace TEMP est utilisé pour le stockage temporaire lors d'opérations de tri, de jointures et d'autres opérations nécessitant de l'espace temporaire. Il est utilisé pour stocker les données temporaires générées par Oracle lors du traitement des requêtes.
-				- Tablespace UNDOTBS
-				  Le tablespace UNDOTBS stocke les données de rollback, qui sont utilisées pour annuler les transactions et fournir une cohérence de lecture. Il maintient un enregistrement des modifications apportées à la base de données et est crucial pour maintenir l'intégrité des données et prendre en charge la gestion des transactions.
-				- Tablespaces par défaut des utilisateurs
-				  Chaque utilisateur dans Oracle peut avoir un tablespace par défaut, qui est le tablespace où ses objets sont créés par défaut s'aucun autre tablespace n'est spécifié. Ce tablespace par défaut peut être défini au niveau de l'utilisateur en utilisant la clause DEFAULT TABLESPACE dans l'instruction CREATE USER ou en modifiant l'utilisateur avec l'instruction ALTER USER.
-			- **Création d'un tablespace** :
-			    - Pour créer un tablespace, utilisez la commande `CREATE TABLESPACE`. Vous pouvez spécifier diverses options telles que la taille, l'emplacement, etc.
-				    ```sql CREATE TABLESPACE nom_tablespace   DATAFILE 'chemin_vers_le_fichier_de_données' SIZE taille   [AUTOEXTEND ON [NEXT taille_extension] [MAXSIZE taille_max]];```
-			- **Associer un tablespace par défaut à un utilisateur** :
-			    - Vous pouvez définir un tablespace par défaut pour un utilisateur en modifiant son profil ou en lui attribuant directement le tablespace.
-				    `ALTER USER nom_utilisateur DEFAULT TABLESPACE nom_tablespace;`
-			- **Vues liées aux tablespaces** :
-			    - Vous pouvez utiliser des vues telles que `DBA_TABLESPACES`, `USER_TABLESPACES` pour afficher des informations sur les tablespaces de la base de données.
-			- **Création d'objets sur un tablespace** :
-			    - Pour créer des objets (tables, index, etc.) dans un tablespace spécifique, spécifiez le nom du tablespace lors de la création de l'objet.
-				    `CREATE TABLE nom_table (...)   TABLESPACE nom_tablespace;`
-			- **Suppression d'un tablespace avec ses objets** :
-			    - Pour supprimer un tablespace avec tous ses objets, utilisez la commande `DROP TABLESPACE` avec l'option `INCLUDING CONTENTS AND DATAFILES`.
-				    `DROP TABLESPACE nom_tablespace INCLUDING CONTENTS AND DATAFILES;`
-			- **Gestion des quotas de tablespace** :
-			    - Vous pouvez définir des quotas sur les tablespaces pour limiter la quantité de stockage qu'un utilisateur peut utiliser dans un tablespace donné.
-				    `ALTER USER nom_utilisateur QUOTA taille_sur_tablespace ON nom_tablespace;`
-		- **Profiles**:
-			- **Profil** :
-			    - Un profil est un ensemble de limites et de paramètres qui contrôlent les ressources disponibles pour un utilisateur de la base de données Oracle.
-			- **Création d'un Profil** :
-			    - Pour créer un profil, utilisez la commande `CREATE PROFILE`. Vous pouvez spécifier des limites telles que le temps de connexion, le nombre de sessions, la consommation CPU, etc.
-			      `CREATE PROFILE nom_profil LIMIT {parameter [VALUE] | DEFAULT};`
-			- **Assignation d'un Profil à un Utilisateur** :
-			    - Vous pouvez assigner un profil à un utilisateur lors de sa création en utilisant la clause `PROFILE` dans l'instruction `CREATE USER`, ou ultérieurement en utilisant la commande `ALTER USER`.
-			      `CREATE USER nom_utilisateur IDENTIFIED BY mot_de_passe PROFILE nom_profil;`
-			      `ALTER USER nom_utilisateur PROFILE nom_profil;`
-			- **Vues liées aux Profils** :
-			    - Vous pouvez utiliser des vues telles que `DBA_PROFILES` ou `USER_PROFILES` pour afficher des informations sur les profils de la base de données.
-			- **Modification d'un Profil** :
-			    - Pour modifier un profil existant, utilisez la commande `ALTER PROFILE`. Vous pouvez ajuster les limites et les paramètres selon les besoins.
-			      `ALTER PROFILE nom_profil LIMIT {parameter [VALUE] | DEFAULT};`
-			- **Suppression d'un Profil** :
-			    - Pour supprimer un profil, utilisez la commande `DROP PROFILE`.
-			      `DROP PROFILE nom_profil;`
+
+  - **Architechteur De Serveur Oracle**:
+
+    - **Un serveur Oracle** est composé d'une <mark style="background: #ABF7F7A6;">instance Oracle</mark> et d'une <mark style="background: #ABF7F7A6;">base de données Oracle</mark>.
+
+      - **Instance Oracle:**  La combinaison <mark style="background: #D2B3FFA6;">des processus d'arrière-plan</mark> et <mark style="background: #D2B3FFA6;">des structures mémoire</mark>. Il est nécessaire de <mark style="background: #FF5582A6;">démarrer l'instance pour accéder</mark> aux données de la base.![[Pasted image 20240224153247.png]]
+
+        - **Structures Memoire** :
+
+          - <mark style="background: #FF5582A6;">SGA</mark> (System Global Area) est une zone de **mémoire** partagée dans Oracle qui stocke des données et des contrôles nécessaires pour le fonctionnement de l'instance de base de données.
+
+            - <mark style="background: #FFF3A3A6;">La Buffer Cache</mark> (Cache tampon) : Stocke les copies en mémoire des blocs de données lus depuis les fichiers de données, réduisant ainsi les accès disque utilise algorithme **LRU**.
+
+            - <mark style="background: #FFF3A3A6;">La Shared Pool </mark>(Piscine partagée) :
+
+              - <mark style="background: #BBFABBA6;">Cache de la bibliothèque</mark> (Library Cache) : Contient les déclarations SQL mises en cache ainsi que leurs plans d'exécution.
+
+              - <mark style="background: #BBFABBA6;">Cache du dictionnaire de données</mark> : Stocke les informations de métadonnées en cache sur les objets de la base de données et leurs définitions(Meta Data About Objects).
+
+            - <mark style="background: #FFF3A3A6;">La Redo Log Buffer</mark> (Tampon de journal de transactions) : Temporairement stocke les informations de journal de transactions avant qu'elles ne soient écrites dans les fichiers de journal de transactions.
+
+            - <mark style="background: #FFF3A3A6;">Le Large Pool</mark> : Une mémoire optionnelle utilisée pour les opérations de sauvegarde et de restauration, le tri mémoire pour les opérations de tri de grande taille, ainsi que pour d'autres fonctions système.
+
+            - <mark style="background: #FFF3A3A6;">Le Java Pool</mark> : Stocke les objets Java chargés dans la base de données Oracle.
+
+          - <mark style="background: #FF5582A6;">PGA</mark> (Program Global Area) est une région de mémoire dans Oracle dédiée au stockage des données et des structures de contrôle pour chaque session ou processus de base de données individuel.![[Pasted image 20240224154828.png]]
+
+        - **Processus Oracle** :
+
+          - **<mark style="background: #CACFD9A6;">Processus utilisateur</mark>**, qui est démarré au moment où un utilisateur de la base de données tente de se connecter au serveur Oracle, demende interaction avec serveur oracle, etablir la connexion
+
+          - <mark style="background: #CACFD9A6;">Processus serveur</mark>, qui établit la connexion à l'instance Oracle et démarre lorsqu'un utilisateur ouvre une session, qui entre directement en interaction avec le serveur oracle, il peut s'agit d'un serveur dédié, ou partager
+
+          - <mark style="background: #CACFD9A6;">Processus d'arrière-plan</mark>, lancés au démarrage d'une instance Oracle.
+
+            - **DBWn** (<mark style="background: #FFB8EBA6;">Database writer</mark>) : Écriture des données modifiées depuis le cache tampon dans les fichiers de données lorsque les seuils de déclenchement sont atteints.
+
+            - **LGWR** (<mark style="background: #FF5582A6;">Log Writer</mark>) : Écriture des informations de journal de transactions dans les fichiers de journal pour garantir la cohérence et la récupération des transactions.
+
+            - **SMON** (<mark style="background: #FFB86CA6;">System Monitor</mark>) : Gère les tâches de maintenance et de récupération du système, comme la récupération après une panne et la gestion de l'instance.
+
+            - **PMON** (<mark style="background: #BBFABBA6;">Process Monitor</mark>) : Surveille les processus utilisateurs et système, nettoie les ressources des processus en échec et gère les connexions clients.
+
+            - **CKPT** (<mark style="background: #D2B3FFA6;">Checkpoint</mark>) : Marque les points de contrôle dans les fichiers de journal pour indiquer la position jusqu'à laquelle les données ont été écrites sur le disque.
+
+      - **Base de données Oracle :** Constituée de <mark style="background: #D2B3FFA6;">fichiers système</mark>, appelés<mark style="background: #D2B3FFA6;"> fichiers de base de données</mark>, qui stockent <mark style="background: #ADCCFFA6;">physiquement les données de la base</mark>.
+
+        - <mark style="background: #FFF3A3A6;">Fichier De Base Des Donnees</mark>:
+
+          - <mark style="background: #FFB8EBA6;">Fichier des données</mark> (Data Files) : Contient les données de la base de données, y compris les tables, les index et les partitions.
+
+          - <mark style="background: #FFB8EBA6;">Fichier des contrôles</mark> (Control Files) : Fichiers de métadonnées critiques contenant des informations sur la structure de la base de données, tels que les noms et emplacements des fichiers de données et des fichiers de journal.
+
+          - <mark style="background: #FFB8EBA6;">Fichier de journalisation</mark> (Redo Log File) : Enregistre les modifications apportées aux données de la base de données pour permettre la récupération en cas de panne.
+
+        - <mark style="background: #FFF3A3A6;">Fichier de paramètres</mark> (Parameter File) : Définit les paramètres d'initialisation pour l'instance de base de données Oracle.
+
+        - <mark style="background: #FFF3A3A6;">Fichier des mots de passe</mark> (Password File) : Stocke les informations d'authentification nécessaires pour la connexion aux bases de données Oracle à l'aide d'identifiants sécurisés.
+
+        - <mark style="background: #FFF3A3A6;">Fichier de journalisation archivé</mark> (Archived Redo Log File) : Une copie archivée des fichiers de journalisation, utilisée pour la récupération à un point antérieur dans le temps, nécessaire lors de la restauration depuis une sauvegarde jusqu'à un point de récupération spécifique.
+
+      - **Structure Logique:**
+
+        - - **Schéma (Schema)** :
+
+            - Contient des objets de base de données tels que des tables, des vues, des index, etc.
+
+            - Les schémas sont logiquement distincts les uns des autres et peuvent être associés à des utilisateurs spécifiques.
+
+        - **Espace de Tables (Tablespace)** :
+
+            - Contient des segments qui, à leur tour, contiennent des extents, qui contiennent des blocs.
+
+            - Les tablespaces sont des unités logiques de stockage qui regroupent les objets de la base de données physiquement associés.
+
+            - **Segment** :
+
+                - Contient des extents.
+
+                - **Extent (Etendue)** :
+
+                    - Contient des blocs.
+
+                    - **Block (Bloc)** :
+
+                        - La plus petite unité de stockage dans Oracle.
+
+        - **Fichier de Données (Data File)** :
+
+            - Stocke les données des objets de la base de données.
+
+            - Chaque fichier de données appartient à un tablespace spécifique.
+
+        - **Objets de la Base de Données** :
+
+            - Ce sont les structures qui stockent, organisent et manipulent les données dans Oracle.
+
+            - **Table** :
+
+                - Un type d'objet de base de données qui contient les données dans des lignes et des colonnes.
+
+                - Les tables sont contenues dans un schéma.
+
+            - **Vue (View)** :
+
+                - Une représentation virtuelle des données stockées dans une ou plusieurs tables.
+
+                - Les vues sont également contenues dans un schéma.
+
+            - **Index** :
+
+                - Une structure de données utilisée pour accélérer la recherche des données.
+
+                - Les index sont associés à une table spécifique dans un schéma.
+
+            - **Procédures Stockées (Stored Procedures)** :
+
+                - Ensemble d'instructions SQL et PL/SQL nommées et stockées dans la base de données.
+
+                - Les procédures stockées résident dans un schéma.
+
+            - **Séquence (Sequence)** :
+
+                - Un objet de base de données utilisé pour générer des nombres séquentiels uniques.
+
+                - Les séquences sont également associées à un schéma.
+
+                -
+
+  - **Administration des bases de données:**
+
+    - **Gestion D'Instance**:
+
+      - **Démarrage** :
+
+        1. **Nomount** :
+
+            - L'étape de démarrage où l'instance est démarrée mais la base de données n'est pas ouverte et aucun fichier de contrôle n'est monté.
+
+            - Commande : `STARTUP NOMOUNT;`
+
+        2. **Mount** :
+
+            - L'étape de démarrage où l'instance est démarrée et les fichiers de contrôle sont montés, mais la base de données n'est pas ouverte pour les utilisateurs.
+
+            - Commande : `STARTUP MOUNT;`
+
+        3. **Open** :
+
+            - L'étape de démarrage où l'instance est démarrée, les fichiers de contrôle sont montés et la base de données est ouverte pour les utilisateurs.
+
+            - Commande : `STARTUP OPEN;`
+
+        - `STARTUP`(Only): Tente de démarrer l'instance de base de données en fonction de son état actuel (montage, ouverture, etc.).
+
+      - **Arrêt** :
+
+        1. **Shutdown Immediate** :
+
+            - Arrête immédiatement l'instance de la base de données en arrêtant toutes les sessions en cours et en libérant les ressources.
+
+            - Commande : `SHUTDOWN IMMEDIATE;`
+
+        2. **Shutdown Transactional** :
+
+            - Attend que toutes les transactions en cours soient terminées avant de fermer l'instance.
+
+            - Commande : `SHUTDOWN TRANSACTIONAL;`
+
+        3. **Shutdown Normal** :
+
+            - Attend que toutes les sessions actives se terminent normalement avant de fermer l'instance.
+
+            - Commande : `SHUTDOWN NORMAL;`
+
+        4. **Shutdown Abort** :
+
+            - Arrête immédiatement l'instance de la base de données sans attendre la fin des transactions en cours.
+
+            - Commande : `SHUTDOWN ABORT;`
+
+        - `SHUTDOWN`(Only): Tente d'arrêter l'instance de base de données en fonction du mode de fermeture configuré (immédiat, transactionnel, normal, etc.).
+
+    - **Gestion des Utilisateurs**:
+
+      - **Création d'un utilisateur** :
+
+        - `CREATE USER nom_utilisateur IDENTIFIED BY mot_de_passe [QUOTA unlimited | taille M | G | K ON nom_tablespace] [ACCOUNT UNLOCK | LOCK] [DEFAULT TABLESPACE nom_tablespace] [TEMPORARY TABLESPACE nom_tablespace]`
+
+      - **Modification d'un utilisateur** :
+
+        - `ALTER USER nom_utilisateur IDENTIFIED BY mot_de_passe [QUOTA unlimited | taille M | G | K ON nom_tablespace] [DEFAULT TABLESPACE] [ACCOUNT UNLOCK | LOCK]`
+
+      - **Verrouillage / déverrouillage d'un utilisateur** :
+
+        - `ALTER USER nom_utilisateur ACCOUNT LOCK | UNLOCK`
+
+      - **Suppression d'un utilisateur** :
+
+        - `DROP USER nom_utilisateur`
+
+        - `DROP USER` command with the `CASCADE` option. This will drop the user and all objects owned by the user.
+
+      - **Utilisation des vues** `ALL_USERS` ou `DBA_USERS` :
+
+        - Exemple : `SELECT username FROM all_users;`
+
+      - **Connaître les utilisateurs** :
+
+        - Afficher l'utilisateur de la session en cours : `SHOW USER`
+
+      - **Changer le mot de passe** :
+
+        - `PASSWORD` et suivez les messages du système.
+
+    - **Gestion des privilèges et rôles:**
+
+      - **Definition**:
+
+        - Priviliges:
+
+          - Un privilège est un droit pour accéder à un objet de base de données (table, vue, …) ou exécuter une commande SQL.
+
+          - Un privilège est un droit qui permet à la personne dont dispose de réaliser une opération déterminée sur une BD.
+
+          - **Previliges deux types**:
+
+            - <mark style="background: #FF5582A6;">Privilège objet</mark> attaché à un objet de BD
+
+            - <mark style="background: #FF5582A6;">Privilège système</mark> concerne l'ensemble de la BD Ex: `create session`, `create table`, `create user`, `select any table`
+
+        - Notion de rôle:
+
+          - Un rôle est un ensemble de privilèges caractérisé par un nom peut etre prédéfini ou créé example (Dba, Connect, Resource)
+
+          - Pour Creer un role:
+
+            - `Create Role role_name;
+
+      - **Grant** & **Revoke**:
+
+        - **Grant** pour accorder des privilèges
+
+          - `Grant liste_privilèges_objets on liste_objets to liste_utilisateurs_rôles ;`
+
+          - ``Grant liste_privilèges_système_rôles to liste_utilisateurs_rôles;``
+
+          - Le privilège `grant any privileges` autorise à son possesseur d'accorder tout privilège système.
+
+          - Le privilège `grant any object privileges` autorise à son possesseur d'accorder tout privilège objet.
+
+          - `With admin option` permet au récepteur des privilèges système ou rôles de les transmettre aux autres utilisateurs. `With grant option` permet au récepteur des privilèges objet de les transmettre aux autres utilisateurs.
+
+          - `Grant create session, resource to ali identified by ali;` Si l'utilisateur n'existe pas il sera créé avec les privilèges indiqués dans la commande.
+
+          - Examples:
+
+            - `Grant select on emp to ali; Grant select (nemp) on emp to ali; Grant insert (nemp, nom), update (salaire) on emp to ali, R;`
+
+        - **Revoke** pour retirer des privilèges.
+
+          - Revoke liste_privilèges_système_rôles [,all privileges] From liste_utilisateurs | liste_rôles | public ;
+
+          - Revoke possède l'option `cascade constraints` qu'on peut utiliser pour supprimer les contraintes référentielles créées lorsque l'utilisateur a reçu l'un des privilèges : - References (X) on nom_table - References on nom_table - All on nom_table
+
+      - **Vues des privilèges:**
+
+        - **dba_sys_privs**:
+
+            - Cette vue affiche les privilèges système accordés à tous les utilisateurs de la base de données.
+
+        - **user_sys_privs**:
+
+            - Cette vue affiche les privilèges système accordés à l'utilisateur actuel.
+
+        - **dba_tab_privs** :
+
+            - Cette vue affiche les privilèges sur les objets accordés aux rôles dans la base de données.
+
+        - **user_tab_privs** :
+
+            - Cette vue affiche les privilèges sur les objets accordés à l'utilisateur actuel.
+
+        - **user_col_privs** :
+
+            - Cette vue affiche les privilèges sur les colonnes accordés à l'utilisateur actuel.
+
+    - **Gestion des Ressources et de la Sécurité**:
+
+      - **Vues**:
+
+        - Une vue est une table logique construite à partir d'une requête `SELECT` qui porte sur des tables et d'autres vues.
+
+        - Le contenu d'une vue est dynamique, extrait des tables de base à chaque appel de la vue.
+
+        - La définition d'une vue est stockée dans le dictionnaire de données (consulter `user_views`).
+
+        - Les vues renforcent la confidentialité en limitant l'accès aux données obtenues à partir de leur requête.
+
+        - **Confidentialité et vues**:
+
+          - Une vue est considérée comme une table virtuelle car elle ne nécessite aucune allocation en mémoire pour contenir les données.
+
+          - Seule la structure d'une vue est stockée dans le dictionnaire de données.
+
+          - **Intérêt des vues dans la confidentialité**:
+
+        - En utilisant les vues, on peut définir des restrictions d'accès aux données pour les utilisateurs.
+
+          - Question 1: Accorder à `ali` un privilège lui permettant de lire uniquement le nom, le prénom et le salaire des employés.
+
+          - Question 2: Accorder à `ali` un privilège pour lire seulement les informations sur les employés d'Agadir.
+
+        - Création de vues et gestion des privilèges**:
+
+          - Pour créer une vue, il faut avoir l'un des privilèges suivants:
+
+            - `CREATE VIEW` (dans son propre schéma)
+
+            - `CREATE ANY VIEW` (dans un autre schéma)
+
+          - Pour créer une vue: `CREATE [OR REPLACE] [FORCE | NO FORCE] VIEW nomVue [(liste De Champs)] AS requêteSélection [WITH READ ONLY];`
+
+          - Pour supprimer une vue: `DROP VIEW nomVue;`
+
+        - **Exemples de création de vues**:
+
+            - Rep1:
+
+              - `CREATE VIEW vue_ali AS SELECT nom, prénom, salaire FROM emp;`
+
+              - `GRANT SELECT ON vue_ali TO ali;`
+
+            - Rep2:
+
+              - `CREATE VIEW vue2_ali AS SELECT * FROM emp WHERE ville = 'Agadir';`
+
+              - `GRANT SELECT ON vue2_ali TO ali;`
+
+      - **Tables spaces**:
+
+        - Un tablespace est un conteneur de stockage logique pour des segments, qui sont les structures physiques stockant les données des tables, des index et d'autres objets de base de données. Voici quelques tablespaces par défaut couramment utilisés dans Oracle :
+
+          - Tablespace SYSTEM
+
+            Description: Le tablespace SYSTEM est le premier tablespace créé lors de l'installation de la base de données Oracle. Il contient des objets de base de données essentiels tels que les tables et index du dictionnaire de données, les segments de rollback et le tablespace undo système.
+
+          - Tablespace SYSAUX
+
+            Description: Le tablespace SYSAUX a été introduit dans Oracle Database 10g pour soulager la charge sur le tablespace SYSTEM en stockant des objets de base de données auxiliaires. Il contient des données pour diverses fonctionnalités et options Oracle, y compris le référentiel Oracle Enterprise Manager.
+
+          - Tablespace TEMP
+
+            Le tablespace TEMP est utilisé pour le stockage temporaire lors d'opérations de tri, de jointures et d'autres opérations nécessitant de l'espace temporaire. Il est utilisé pour stocker les données temporaires générées par Oracle lors du traitement des requêtes.
+
+          - Tablespace UNDOTBS
+
+            Le tablespace UNDOTBS stocke les données de rollback, qui sont utilisées pour annuler les transactions et fournir une cohérence de lecture. Il maintient un enregistrement des modifications apportées à la base de données et est crucial pour maintenir l'intégrité des données et prendre en charge la gestion des transactions.
+
+          - Tablespaces par défaut des utilisateurs
+
+            Chaque utilisateur dans Oracle peut avoir un tablespace par défaut, qui est le tablespace où ses objets sont créés par défaut s'aucun autre tablespace n'est spécifié. Ce tablespace par défaut peut être défini au niveau de l'utilisateur en utilisant la clause DEFAULT TABLESPACE dans l'instruction CREATE USER ou en modifiant l'utilisateur avec l'instruction ALTER USER.
+
+        - **Création d'un tablespace** :
+
+            - Pour créer un tablespace, utilisez la commande `CREATE TABLESPACE`. Vous pouvez spécifier diverses options telles que la taille, l'emplacement, etc.
+
+              ```sql CREATE TABLESPACE nom_tablespace   DATAFILE 'chemin_vers_le_fichier_de_données' SIZE taille   [AUTOEXTEND ON [NEXT taille_extension] [MAXSIZE taille_max]];```
+
+        - **Associer un tablespace par défaut à un utilisateur** :
+
+            - Vous pouvez définir un tablespace par défaut pour un utilisateur en modifiant son profil ou en lui attribuant directement le tablespace.
+
+              `ALTER USER nom_utilisateur DEFAULT TABLESPACE nom_tablespace;`
+
+        - **Vues liées aux tablespaces** :
+
+            - Vous pouvez utiliser des vues telles que `DBA_TABLESPACES`, `USER_TABLESPACES` pour afficher des informations sur les tablespaces de la base de données.
+
+        - **Création d'objets sur un tablespace** :
+
+            - Pour créer des objets (tables, index, etc.) dans un tablespace spécifique, spécifiez le nom du tablespace lors de la création de l'objet.
+
+              `CREATE TABLE nom_table (...)   TABLESPACE nom_tablespace;`
+
+        - **Suppression d'un tablespace avec ses objets** :
+
+            - Pour supprimer un tablespace avec tous ses objets, utilisez la commande `DROP TABLESPACE` avec l'option `INCLUDING CONTENTS AND DATAFILES`.
+
+              `DROP TABLESPACE nom_tablespace INCLUDING CONTENTS AND DATAFILES;`
+
+        - **Gestion des quotas de tablespace** :
+
+            - Vous pouvez définir des quotas sur les tablespaces pour limiter la quantité de stockage qu'un utilisateur peut utiliser dans un tablespace donné.
+
+              `ALTER USER nom_utilisateur QUOTA taille_sur_tablespace ON nom_tablespace;`
+
+      - **Profiles**:
+
+        - **Profil** :
+
+            - Un profil est un ensemble de limites et de paramètres qui contrôlent les ressources disponibles pour un utilisateur de la base de données Oracle.
+
+        - **Création d'un Profil** :
+
+            - Pour créer un profil, utilisez la commande `CREATE PROFILE`. Vous pouvez spécifier des limites telles que le temps de connexion, le nombre de sessions, la consommation CPU, etc.
+
+              `CREATE PROFILE nom_profil LIMIT {parameter [VALUE] | DEFAULT};`
+
+        - **Assignation d'un Profil à un Utilisateur** :
+
+            - Vous pouvez assigner un profil à un utilisateur lors de sa création en utilisant la clause `PROFILE` dans l'instruction `CREATE USER`, ou ultérieurement en utilisant la commande `ALTER USER`.
+
+              `CREATE USER nom_utilisateur IDENTIFIED BY mot_de_passe PROFILE nom_profil;`
+
+              `ALTER USER nom_utilisateur PROFILE nom_profil;`
+
+        - **Vues liées aux Profils** :
+
+            - Vous pouvez utiliser des vues telles que `DBA_PROFILES` ou `USER_PROFILES` pour afficher des informations sur les profils de la base de données.
+
+        - **Modification d'un Profil** :
+
+            - Pour modifier un profil existant, utilisez la commande `ALTER PROFILE`. Vous pouvez ajuster les limites et les paramètres selon les besoins.
+
+              `ALTER PROFILE nom_profil LIMIT {parameter [VALUE] | DEFAULT};`
+
+        - **Suppression d'un Profil** :
+
+            - Pour supprimer un profil, utilisez la commande `DROP PROFILE`.
+
+              `DROP PROFILE nom_profil;`
