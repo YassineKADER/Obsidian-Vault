@@ -215,4 +215,3 @@
 			- **Suppression d'un Profil** :
 			    - Pour supprimer un profil, utilisez la commande `DROP PROFILE`.
 			      `DROP PROFILE nom_profil;`
-		- **Gestion des Ressources et de la Sécurité**
