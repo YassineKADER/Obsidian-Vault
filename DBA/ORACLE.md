@@ -143,7 +143,7 @@
 				    - Cette vue affiche les privilèges sur les objets accordés à l'utilisateur actuel.
 				- **user_col_privs** :
 				    - Cette vue affiche les privilèges sur les colonnes accordés à l'utilisateur actuel.
-		- **Vue**s:
+		- **Vues**:
 		  - Une vue est une table logique construite à partir d'une requête `SELECT` qui porte sur des tables et d'autres vues.
 		  - Le contenu d'une vue est dynamique, extrait des tables de base à chaque appel de la vue.
 		  - La définition d'une vue est stockée dans le dictionnaire de données (consulter `user_views`).
