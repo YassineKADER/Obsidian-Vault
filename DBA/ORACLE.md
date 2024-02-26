@@ -10,29 +10,29 @@
 
         - **Structures Memoire** :
 
-          - <mark style="background: #FF5582A6;">SGA</mark> (System Global Area) est une zone de **mémoire** partagée dans Oracle qui stocke des données et des contrôles nécessaires pour le fonctionnement de l'instance de base de données.
+          - <mark style="background: #FF5582A6;">SGA</mark> (System Global Area) est <mark class="hltr-pink">une zone de mémoire partagée dans Oracle</mark> qui <mark class="hltr-cyan">stocke des données</mark> et des <mark class="hltr-cyan">contrôles nécessaires</mark> pour<mark class="hltr-purple"> le fonctionnement de l'instance </mark>de base de données.
 
-            - <mark style="background: #FFF3A3A6;">La Buffer Cache</mark> (Cache tampon) : Stocke les copies en mémoire des blocs de données lus depuis les fichiers de données, réduisant ainsi les accès disque utilise algorithme **LRU**.
+            - <mark style="background: #FFF3A3A6;">La Buffer Cache</mark> (Cache tampon) : <mark class="hltr-orange">Stocke les copies en mémoire</mark> des blocs de données lus depuis les fichiers de données, <mark class="hltr-yellow">réduisant ainsi les accès disque</mark> utilise algorithme <mark class="hltr-green">LRU</mark>.
 
             - <mark style="background: #FFF3A3A6;">La Shared Pool </mark>(Piscine partagée) :
 
-              - <mark style="background: #BBFABBA6;">Cache de la bibliothèque</mark> (Library Cache) : Contient les déclarations SQL mises en cache ainsi que leurs plans d'exécution.
+              - <mark style="background: #BBFABBA6;">Cache de la bibliothèque</mark> (Library Cache) : <mark class="hltr-cyan">Contient les déclarations SQL</mark> mises en cache ainsi que leurs plans d'exécution.
 
-              - <mark style="background: #BBFABBA6;">Cache du dictionnaire de données</mark> : Stocke les informations de métadonnées en cache sur les objets de la base de données et leurs définitions(Meta Data About Objects).
+              - <mark style="background: #BBFABBA6;">Cache du dictionnaire de données</mark> : Stocke les informations de métadonnées en cache sur les objets de la base de données et leurs définitions(<mark class="hltr-grey">Meta Data About Objects</mark>).
 
-            - <mark style="background: #FFF3A3A6;">La Redo Log Buffer</mark> (Tampon de journal de transactions) : Temporairement stocke les informations de journal de transactions avant qu'elles ne soient écrites dans les fichiers de journal de transactions.
+            - <mark style="background: #FFF3A3A6;">La Redo Log Buffer</mark> (Tampon de journal de transactions) : Temporairement stocke les informations <mark class="hltr-orange">de journal de transactions avant qu'elles ne soient écrites</mark> dans les <mark class="hltr-purple">fichiers de journal de transactions.</mark>
 
-            - <mark style="background: #FFF3A3A6;">Le Large Pool</mark> : Une mémoire optionnelle utilisée pour les opérations de sauvegarde et de restauration, le tri mémoire pour les opérations de tri de grande taille, ainsi que pour d'autres fonctions système.
+            - <mark style="background: #FFF3A3A6;">Le Large Pool</mark> : Une <mark class="hltr-yellow">mémoire optionnelle</mark> utilisée pour<mark class="hltr-grey"> les opérations de sauvegarde et de restauration</mark>, le <mark class="hltr-grey">tri mémoire pour les opérations de tri</mark> de grande taille, ainsi que <mark class="hltr-grey">pour d'autres fonctions système</mark>.
 
-            - <mark style="background: #FFF3A3A6;">Le Java Pool</mark> : Stocke les objets Java chargés dans la base de données Oracle.
+            - <mark style="background: #FFF3A3A6;">Le Java Pool</mark> : Stocke <mark class="hltr-blue">les objets Java</mark> <mark class="hltr-purple">chargés dans la base de données Oracle</mark>.
 
-          - <mark style="background: #FF5582A6;">PGA</mark> (Program Global Area) est une région de mémoire dans Oracle dédiée au stockage des données et des structures de contrôle pour chaque session ou processus de base de données individuel.![[Pasted image 20240224154828.png]]
+          - <mark style="background: #FF5582A6;">PGA</mark> (Program Global Area) est une région de mémoire dans Oracle <mark class="hltr-green">dédiée au stockage des données et des structures de contrôle </mark>pour <mark class="hltr-purple">chaque session ou processus</mark> de base                                de données individuel.![[Pasted image 20240224154828.png]]
 
         - **Processus Oracle** :
 
-          - **<mark style="background: #CACFD9A6;">Processus utilisateur</mark>**, qui est démarré au moment où un utilisateur de la base de données tente de se connecter au serveur Oracle, demende interaction avec serveur oracle, etablir la connexion
+          - **<mark style="background: #CACFD9A6;">Processus utilisateur</mark>**, qui est <mark class="hltr-pink">démarré au moment où un utilisateur</mark> de la base de données <mark class="hltr-purple">tente de se connecter au serveur Oracle</mark>, demende<mark class="hltr-blue"> interaction avec serveur oracle</mark>, <mark class="hltr-yellow">etablir la connexion</mark>
 
-          - <mark style="background: #CACFD9A6;">Processus serveur</mark>, qui établit la connexion à l'instance Oracle et démarre lorsqu'un utilisateur ouvre une session, qui entre directement en interaction avec le serveur oracle, il peut s'agit d'un serveur dédié, ou partager
+          - <mark style="background: #CACFD9A6;">Processus serveur</mark>, qui <mark class="hltr-cyan">établit la connexion à l'instance</mark> Oracle et <mark class="hltr-yellow">démarre lorsqu'un utilisateur ouvre une session</mark>, qui entre <mark class="hltr-yellow">directement en interaction avec le serveur oracle</mark>, il peut s'agit d'un serveur dédié, ou partager
 
           - <mark style="background: #CACFD9A6;">Processus d'arrière-plan</mark>, lancés au démarrage d'une instance Oracle.
 
