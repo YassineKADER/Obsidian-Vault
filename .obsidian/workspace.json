@@ -13,21 +13,22 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DBA/ORACLE.md",
+                "file": "DBA/warehouse.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "36c9f70b744c2fe2",
+            "id": "b5d710a34386fe22",
             "type": "leaf",
             "state": {
               "type": "mindmap",
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -77,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "f028a7507d416ab7",
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "DBA/ORACLE.md",
+                "file": "DBA/warehouse.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "DBA/ORACLE.md",
+                "file": "DBA/warehouse.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "DBA/ORACLE.md"
+                "file": "DBA/warehouse.md"
               }
             }
           },
@@ -168,10 +168,11 @@
   },
   "active": "d2d8fb81f2ba6691",
   "lastOpenFiles": [
-    "DBA/DBA-PNOTES.md",
+    "Amplify-Android-Auth.md",
     "DBA/ORACLE.md",
+    "DBA/DBA-PNOTES.md",
     "Untitled 1.md",
-    "Untitled.md",
+    "DBA/warehouse.md",
     "Tomcat and JEE.md",
     "DBA/DBA-NOTES&TPS.md",
     "DBA/Pasted image 20240224154828.png",
@@ -180,7 +181,6 @@
     "DBA/DBA.md",
     "V2ray.md",
     "DBA",
-    "Amplify-Android-Auth.md",
     "naruto.md",
     "Untitled.canvas",
     "Untitled 1.canvas",

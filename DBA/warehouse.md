@@ -1,0 +1,23 @@
+- proposer une modelisation data warehouse au moins deux modeles rich pour une etude de cas dans le demaine .
+	- Une entreprise de commerce électronique souhaite a ameliorer sa compréhension des habitudes d'achat de ses clients
+		- **Model en etoile** pour analyser les donnees de vent:
+			- **Tables fait**:
+				- Contient des mesures comme: ID_Client, Date, ID_magasin, ID_produit, Quantity
+			- **Tables de dimensions**: 
+				- Produit (ID_produit, Prox, Dimention, quantity)
+				- Client (ID_client, ,Contact_Info)
+				- Magasin
+				- Vents
+		- **Model en flocon**:
+			- Tables fait:
+				- Contient des mesures comme: ID_Client, Date, ID_magasin, ID_produit, Quantity
+			- **Tables de dimensions** + **Tables de dimensions normalisées**:
+				- Produit
+				- Client
+					- Contact Infos
+					- Adress
+						- Ville
+				- Magasin
+					- Adress
+					- employes
+				- Vents
