@@ -4,8 +4,8 @@
 			- **Tables fait**:
 				- Contient des mesures comme: ID_Client, Date, ID_magasin, ID_produit, Quantity
 			- **Tables de dimensions**: 
-				- Produit (ID_produit, Prox, Dimention, quantity)
-				- Client (ID_client, ,Contact_Info)
+				- Produit (ID_produit, Prix, Dimention, quantity)
+				- Client (ID_client, Contact_Info)
 				- Magasin
 				- Vents
 		- **Model en flocon**:
@@ -21,3 +21,22 @@
 					- Adress
 					- employes
 				- Vents
+	- Analyser les performances des étudiants dans différentes matières et classes pour identifier les domaines qui nécessitent une amélioration.
+		- **Model en etoile**:
+			- **Table Fait**:
+				- Performance_Student (Student_ID, Subject_ID, Class_ID, Grade)
+			- **Tables de dimensions**:
+				- Student (Student_ID, Student_LastName, Student_FirstName, Date_of_Birth, Address)
+				- Subject (Subject_ID, Subject_Name, Domain)
+				- Class (Class_ID, Class_Name, Level, Section)
+		- **Model en flocon**:
+			- **Table Fait**:
+				- Performance_Student (Student_ID, Subject_ID, Class_ID, Grade)
+			- **Tables de dimensions**:
+				- Subject (Subject_ID, Subject_Name, Domain)
+				- Student (Student_ID, Student_LastName, Student_FirstName, Date_of_Birth, Address)
+				- Class (Class_ID, Class_Name, Level, ClassRoom_ID)
+					- ClassRoom(Name,ClassRoom_ID ,Department_ID)
+						- Department(Name, Location)
+				    - Section (Section_ID, Section_Name, Teacher_ID)
+						- Teacher(Name, Adress, Teacher_ID)
