@@ -11,7 +11,7 @@
 		- **Model en flocon**:
 			- Tables fait:
 				- Contient des mesures comme: ID_Client, Date, ID_magasin, ID_produit, Quantity
-			- **Tables de dimensions** + **Tables de dimensions normalisées**:
+			- **Tables de Dimensions** + **Tables de Dimensions Normalisées**:
 				- Produit
 				- Client
 					- Contact Infos
