@@ -1,3 +1,4 @@
+[[Amplify-Android-Auth]]
 first of all move to the root  directory of you project:
 ```powershell
 ps c:\users\gk\desktop\foodly-master\foodly-master> amplify init
