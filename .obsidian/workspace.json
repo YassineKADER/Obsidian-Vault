@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Setup Amplify With Android App Complete Guide.md",
+                "file": "Setup Amplify For Android App.md",
                 "mode": "source",
                 "source": false
               }
@@ -97,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Setup Amplify With Android App Complete Guide.md",
+                "file": "Setup Amplify For Android App.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Setup Amplify With Android App Complete Guide.md",
+                "file": "Setup Amplify For Android App.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Setup Amplify With Android App Complete Guide.md"
+                "file": "Setup Amplify For Android App.md"
               }
             }
           },
@@ -171,8 +171,9 @@
   },
   "active": "523f445a33f5c8d8",
   "lastOpenFiles": [
+    "Pasted image 20240229131917.png",
     "Amplify-Android-Auth.md",
-    "Setup Amplify With Android App Complete Guide.md",
+    "Setup Amplify For Android App.md",
     "DBA/warehouse.md",
     "Tomcat and JEE.md",
     "DBA/ORACLE.md",
