@@ -1,7 +1,6 @@
 - **Classe**: DBA
 - **Sujet**: Notes de Cours
 - **Sous-thème**: Options d'Arrêt
-- [[DBA-PNOTES]]
 
 Notes :
   - Arrêt :

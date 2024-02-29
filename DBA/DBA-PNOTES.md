@@ -1,4 +1,3 @@
-[[DBA-NOTES&TPS]]
 ## Architecture Oracle :
 
 ### Serveur Oracle :

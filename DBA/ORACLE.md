@@ -1,4 +1,8 @@
-  
+  Useufle Links:
+	[[warehouse]]
+	[[DBA-PNOTES]]
+	[[DBA-NOTES&TPS]]
+	[[DBA]]
 
 - **Serveur Oracle:** C’est un système de<mark style="background: #FFB86CA6;"> gestion de base de données</mark> qui offre une méthode de <mark style="background: #FFB86CA6;">gestion des informations</mark>, ouverte, complète et intégrée
 
