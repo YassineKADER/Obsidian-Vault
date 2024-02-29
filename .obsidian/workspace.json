@@ -8,23 +8,27 @@
         "type": "tabs",
         "children": [
           {
-            "id": "d2d8fb81f2ba6691",
+            "id": "523f445a33f5c8d8",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DBA/warehouse.md",
+                "file": "Setup Amplify With Android App Complete Guide.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "d1f5b217986592bc",
+            "id": "a86f6dfd4c9c7c3e",
             "type": "leaf",
             "state": {
-              "type": "mindmap",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Amplify-Android-Auth.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -93,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "DBA/warehouse.md",
+                "file": "Setup Amplify With Android App Complete Guide.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "DBA/warehouse.md",
+                "file": "Setup Amplify With Android App Complete Guide.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "DBA/warehouse.md"
+                "file": "Setup Amplify With Android App Complete Guide.md"
               }
             }
           },
@@ -165,14 +169,15 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "d2d8fb81f2ba6691",
+  "active": "523f445a33f5c8d8",
   "lastOpenFiles": [
-    "DBA/warehouse.md",
     "Amplify-Android-Auth.md",
+    "Setup Amplify With Android App Complete Guide.md",
+    "DBA/warehouse.md",
+    "Tomcat and JEE.md",
     "DBA/ORACLE.md",
     "DBA/DBA-PNOTES.md",
     "Untitled 1.md",
-    "Tomcat and JEE.md",
     "DBA/DBA-NOTES&TPS.md",
     "DBA/Pasted image 20240224154828.png",
     "DBA/Pasted image 20240224153247.png",
