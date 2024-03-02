@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DBA/ORACLE.md",
+                "file": "DBA/warehouse.md",
                 "mode": "source",
                 "source": false
               }
@@ -129,7 +129,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "DBA/ORACLE.md",
+                "file": "DBA/warehouse.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -146,7 +146,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "DBA/ORACLE.md",
+                "file": "DBA/warehouse.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -169,7 +169,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "DBA/ORACLE.md"
+                "file": "DBA/warehouse.md"
               }
             }
           },
@@ -203,6 +203,7 @@
   },
   "active": "f88d38c68d16bd3e",
   "lastOpenFiles": [
+    "DBA/ORACLE.md",
     "AVT-SCRAPING.md",
     "Setup Amplify For Android App.md",
     "VLANS.md",
@@ -210,7 +211,6 @@
     "Tomcat and JEE.md",
     "ACL.md",
     "Untitled",
-    "DBA/ORACLE.md",
     "DBA/DBA-PNOTES.md",
     "naruto.md",
     "DBA/DBA-NOTES&TPS.md",

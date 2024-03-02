@@ -40,3 +40,4 @@
 						- Department(Name, Location)
 				    - Section (Section_ID, Section_Name, Teacher_ID)
 						- Teacher(Name, Adress, Teacher_ID)
+need to add a brief 
