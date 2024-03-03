@@ -13,18 +13,10 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DBA/warehouse.md",
+                "file": "DBA/ORACLE.md",
                 "mode": "source",
                 "source": false
               }
-            }
-          },
-          {
-            "id": "74419ffb1a1d0c4b",
-            "type": "leaf",
-            "state": {
-              "type": "mindmap",
-              "state": {}
             }
           },
           {
@@ -129,7 +121,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "DBA/warehouse.md",
+                "file": "DBA/ORACLE.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -146,7 +138,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "DBA/warehouse.md",
+                "file": "DBA/ORACLE.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -169,7 +161,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "DBA/warehouse.md"
+                "file": "DBA/ORACLE.md"
               }
             }
           },
@@ -201,8 +193,43 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "f88d38c68d16bd3e",
+  "floating": {
+    "id": "ce8439727099af4a",
+    "type": "floating",
+    "children": [
+      {
+        "id": "58fc275f1940fa99",
+        "type": "window",
+        "children": [
+          {
+            "id": "ec716f4eadf9fdd2",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "ae815600baa4db31",
+                "type": "leaf",
+                "state": {
+                  "type": "mindmap",
+                  "state": {}
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "vertical",
+        "x": 172,
+        "y": 20,
+        "width": 1192,
+        "height": 776,
+        "maximize": true,
+        "zoom": 0
+      }
+    ]
+  },
+  "active": "ae815600baa4db31",
   "lastOpenFiles": [
+    "DBA/DBA.md",
+    "DBA/warehouse.md",
     "DBA/ORACLE.md",
     "AVT-SCRAPING.md",
     "Setup Amplify For Android App.md",
@@ -215,12 +242,10 @@
     "naruto.md",
     "DBA/DBA-NOTES&TPS.md",
     "Pasted image 20240229131917.png",
-    "DBA/warehouse.md",
     "Untitled 1.md",
     "DBA/Pasted image 20240224154828.png",
     "DBA/Pasted image 20240224153247.png",
     "DBA/Pasted image 20240224150645.png",
-    "DBA/DBA.md",
     "V2ray.md",
     "DBA",
     "Untitled.canvas",
