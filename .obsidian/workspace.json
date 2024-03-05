@@ -4,71 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "6cc85e0e780b1ffc",
+        "id": "7e5e053abfe3ccb7",
         "type": "tabs",
         "children": [
           {
-            "id": "f88d38c68d16bd3e",
+            "id": "585cccdb1d312efd",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DBA/ORACLE.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "b63ca0fea5647009",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "DBA/DBA-NOTES&TPS.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "dffff38a81d095f3",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "VLANS.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "b7adc221124ae4c6",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Setup Amplify For Android App.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "dceb52ae8e2b8b42",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "AVT-SCRAPING.md",
+                "file": "Cube OLAP.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -134,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "DBA/DBA-NOTES&TPS.md",
+                "file": "Cube OLAP.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "DBA/DBA-NOTES&TPS.md",
+                "file": "Cube OLAP.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "DBA/DBA-NOTES&TPS.md"
+                "file": "Cube OLAP.md"
               }
             }
           },
@@ -206,15 +157,16 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "b63ca0fea5647009",
+  "active": "585cccdb1d312efd",
   "lastOpenFiles": [
+    "Cube OLAP.md",
     "DBA/ORACLE.md",
     "DBA/DBA-NOTES&TPS.md",
+    "AVT-SCRAPING.md",
+    "Setup Amplify For Android App.md",
     "DBA/DBA-PNOTES.md",
     "DBA/DBA.md",
     "DBA/warehouse.md",
-    "AVT-SCRAPING.md",
-    "Setup Amplify For Android App.md",
     "VLANS.md",
     "Amplify-Android-Auth.md",
     "Tomcat and JEE.md",
