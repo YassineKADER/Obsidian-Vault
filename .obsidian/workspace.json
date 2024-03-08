@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "a678b9dc9205d052",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ADM.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Cube OLAP.md",
+                "file": "ADM.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Cube OLAP.md",
+                "file": "ADM.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Cube OLAP.md"
+                "file": "ADM.md"
               }
             }
           },
@@ -157,9 +170,10 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "585cccdb1d312efd",
+  "active": "a678b9dc9205d052",
   "lastOpenFiles": [
     "Cube OLAP.md",
+    "ADM.md",
     "DBA/ORACLE.md",
     "DBA/DBA-NOTES&TPS.md",
     "AVT-SCRAPING.md",
