@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ADM.md",
+                "file": "ADMINISTRATION SYS.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ADM.md",
+                "file": "ADMINISTRATION SYS.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ADM.md",
+                "file": "ADMINISTRATION SYS.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ADM.md"
+                "file": "ADMINISTRATION SYS.md"
               }
             }
           },
@@ -173,7 +173,7 @@
   "active": "a678b9dc9205d052",
   "lastOpenFiles": [
     "Cube OLAP.md",
-    "ADM.md",
+    "ADMINISTRATION SYS.md",
     "DBA/ORACLE.md",
     "DBA/DBA-NOTES&TPS.md",
     "AVT-SCRAPING.md",
