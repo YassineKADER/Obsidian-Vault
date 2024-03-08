@@ -18,4 +18,4 @@ Domain
 			Universire au seins d'un foret ou pleusierus foret
 		Une site: ensemble des controleurs connecter entre eux
 		Replication: une copie de donner dun serveur ou dcP
-		Relation d'aprobation: les relation qui liee les domain et les foret enter eux(automatique au sein de meme foret, (manuelle) non automatique entre foret)
+		Relation d'aprobation: les relation qui liee les domain et les foret enter eux(automatique au sein de meme foret entre un domain et domain fille, (manuelle) non automatique entre foret)
