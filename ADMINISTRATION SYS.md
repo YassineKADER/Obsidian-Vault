@@ -19,3 +19,8 @@ Domain
 		Une site: ensemble des controleurs connecter entre eux
 		Replication: une copie de donner dun serveur ou dcP
 		Relation d'aprobation: les relation qui liee les domain et les foret enter eux(automatique au sein de meme foret entre un domain et domain fille, (manuelle) non automatique entre foret)
+
+
+search about dc promo
+Niveu fonctionnel de la foret: old or new but in new installaition we need to choose the latest one  or depending or wath things that we will need on the dc
+NTDS: c'est le fichier aui contient tous les information liee soit au objest ou etc.....
