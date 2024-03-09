@@ -25,14 +25,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ADMINISTRATION SYS.md",
+                "file": "DBA/DBA.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "2d72792c067bc090",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Table Spaces.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -98,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ADMINISTRATION SYS.md",
+                "file": "Table Spaces.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ADMINISTRATION SYS.md",
+                "file": "Table Spaces.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ADMINISTRATION SYS.md"
+                "file": "Table Spaces.md"
               }
             }
           },
@@ -170,16 +182,17 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "a678b9dc9205d052",
+  "active": "2d72792c067bc090",
   "lastOpenFiles": [
-    "Cube OLAP.md",
+    "DBA/DBA.md",
+    "Table Spaces.md",
     "ADMINISTRATION SYS.md",
+    "Cube OLAP.md",
     "DBA/ORACLE.md",
     "DBA/DBA-NOTES&TPS.md",
     "AVT-SCRAPING.md",
     "Setup Amplify For Android App.md",
     "DBA/DBA-PNOTES.md",
-    "DBA/DBA.md",
     "DBA/warehouse.md",
     "VLANS.md",
     "Amplify-Android-Auth.md",
