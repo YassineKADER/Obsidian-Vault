@@ -1,7 +1,4 @@
-## Tablespaces Cheat Sheet
-
 ### Types de Tablespaces
-
 - **Tablespaces permanents :**
   - Stockent des données persistantes.
   - Exemples : `(DATA)`, `(USERS)`.
@@ -14,59 +11,60 @@
 ### Création des Tablespaces
 - **Création de Tablespace Permanent :**
   ```sql
-CREATE TABLESPACE nom_tablespace
-DATAFILE 'chemin_vers_fichier' TAILLE taille;
-
+  CREATE TABLESPACE nom_tablespace
+  DATAFILE 'chemin_vers_fichier' TAILLE taille;```
+- Création de Tablespace Temporaire :
+```SQL
 CREATE TEMPORARY TABLESPACE nom_tablespace
 TEMPFILE 'chemin_vers_fichier' TAILLE taille;
-
---Création de Tablespace d'Annulation :
+```
+- Création de Tablespace d'Annulation :
+```SQL
 CREATE UNDO TABLESPACE nom_tablespace_annulation
 DATAFILE 'chemin_vers_fichier' TAILLE taille;
+```
 
---Attribution des Tablespaces
-
---Attribution de Tablespace Permanent :
+### Attribution des Tablespaces
+- Attribution de Tablespace Permanent :
+```SQL
 ALTER USER nom_utilisateur DEFAULT TABLESPACE nom_tablespace;
-
---Attribution de Tablespace Temporaire :
+```
+- Attribution de Tablespace Temporaire :
+```SQL
 ALTER USER nom_utilisateur TABLESPACE TEMPORAIRE nom_tablespace;
-
---Gestion des Tablespaces
-
---Modification des Tablespaces :
-ALTER TABLESPACE nom_tablespace {AJOUTER|SUPPRIMER} DATAFILE 'chemin_vers_fichier';
-
---Suppression des Tablespaces :
-
+```
+- Attribution de Tablespace Undo:
+```sql
+ALTER SYSTEM SET UNDO_TABLESPACE = undo_tablespace_name;
+```
+### Gestion des Tablespaces
+- Modification des Tablespaces :
+```SQL
+ALTER DATABASE DATAFILE '/path/to/datafile.dbf' RESIZE 100M;
+ALTER DATABASE DATAFILE '/path/to/datafile.dbf' AUTOEXTEND ON MAXSIZE 200M;
+ALTER TABLESPACE nom_tablespace RENAME TO new_name;
+ALTER TABLESPACE nom_tablespace {ADD|DELETE} DATAFILE 'chemin_vers_fichier' SIZE 100M;
+```
+- Suppression des Tablespaces :
+```SQL
 DROP TABLESPACE nom_tablespace;
-
-Surveillance des Tablespaces :
-
-sql
-
-    SELECT * FROM DBA_TABLESPACES;
-
-Opérations supplémentaires
-
-    Ajout de Fichiers de Données :
-
-    sql
-
+```
+- Surveillance des Tablespaces :
+```SQL
+SELECT * FROM DBA_TABLESPACES;
+```
+### Opérations supplémentaires
+- Ajout de Fichiers de Données :
+```SQL
 ALTER TABLESPACE nom_tablespace AJOUTER DATAFILE 'chemin_vers_fichier' TAILLE taille;
+```
+- Redimensionnement des Fichiers de Données :
+```SQL
+ALTER DATABASE DATAFILE 'chemin_vers_fichier' RESIZE taille;
+```
+- Tablespace par Défaut
 
-Redimensionnement des Fichiers de Données :
-
-sql
-
-    ALTER DATABASE DATAFILE 'chemin_vers_fichier' REDIMENSIONNER taille;
-
-Tablespace par Défaut
-
-Pour afficher les tablespaces par défaut existants :
-
-sql
-
+```SQL
 SELECT PROPERTY_NAME, PROPERTY_VALUE
 FROM DATABASE_PROPERTIES
 WHERE PROPERTY_NAME LIKE '%DEFAULT%';
