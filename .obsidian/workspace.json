@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cube OLAP.md",
+                "file": "DBA/DBA-NOTES&TPS.md",
                 "mode": "source",
                 "source": false
               }
@@ -109,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Cube OLAP.md",
+                "file": "DBA/DBA-NOTES&TPS.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -126,7 +126,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Cube OLAP.md",
+                "file": "DBA/DBA-NOTES&TPS.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -149,7 +149,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Cube OLAP.md"
+                "file": "DBA/DBA-NOTES&TPS.md"
               }
             }
           },
@@ -183,6 +183,11 @@
   },
   "active": "585cccdb1d312efd",
   "lastOpenFiles": [
+    "DBA/DBA-PNOTES.md",
+    "DBA/warehouse.md",
+    "DBA/DBA-NOTES&TPS.md",
+    "DBA/ORACLE.md",
+    "Cube OLAP.md",
     "AVT-SCRAPING.md",
     "ADMINISTRATION SYS.md",
     "ACL.md",
@@ -192,12 +197,7 @@
     "Tomcat and JEE.md",
     "Table Spaces.md",
     "Setup Amplify For Android App.md",
-    "Cube OLAP.md",
-    "DBA/warehouse.md",
     "DBA/DBA.md",
-    "DBA/DBA-NOTES&TPS.md",
-    "DBA/DBA-PNOTES.md",
-    "DBA/ORACLE.md",
     "Untitled",
     "naruto.md",
     "Pasted image 20240229131917.png",
