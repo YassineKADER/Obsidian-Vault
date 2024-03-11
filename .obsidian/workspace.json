@@ -43,8 +43,7 @@
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -110,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Table Spaces.md",
+                "file": "Cube OLAP.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +126,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Table Spaces.md",
+                "file": "Cube OLAP.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +149,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Table Spaces.md"
+                "file": "Cube OLAP.md"
               }
             }
           },
@@ -182,22 +181,23 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "2d72792c067bc090",
+  "active": "585cccdb1d312efd",
   "lastOpenFiles": [
-    "DBA/DBA.md",
-    "Table Spaces.md",
-    "ADMINISTRATION SYS.md",
-    "Cube OLAP.md",
-    "DBA/ORACLE.md",
-    "DBA/DBA-NOTES&TPS.md",
     "AVT-SCRAPING.md",
-    "Setup Amplify For Android App.md",
-    "DBA/DBA-PNOTES.md",
-    "DBA/warehouse.md",
-    "VLANS.md",
-    "Amplify-Android-Auth.md",
-    "Tomcat and JEE.md",
+    "ADMINISTRATION SYS.md",
     "ACL.md",
+    "Amplify-Android-Auth.md",
+    "VLANS.md",
+    "V2ray.md",
+    "Tomcat and JEE.md",
+    "Table Spaces.md",
+    "Setup Amplify For Android App.md",
+    "Cube OLAP.md",
+    "DBA/warehouse.md",
+    "DBA/DBA.md",
+    "DBA/DBA-NOTES&TPS.md",
+    "DBA/DBA-PNOTES.md",
+    "DBA/ORACLE.md",
     "Untitled",
     "naruto.md",
     "Pasted image 20240229131917.png",
@@ -205,7 +205,6 @@
     "DBA/Pasted image 20240224154828.png",
     "DBA/Pasted image 20240224153247.png",
     "DBA/Pasted image 20240224150645.png",
-    "V2ray.md",
     "DBA",
     "Untitled.canvas",
     "Untitled 1.canvas",
