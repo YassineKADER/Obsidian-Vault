@@ -21,3 +21,9 @@ Procedure d'execution d'un request d'interogation et la transaction comment le s
 parsing, analyse, fitch
 lberary cash: plan d'exucution d'un request
 pga se utiliser dans les request d'interogation, il ne utilse pas dans les transaction.
+
+granulariter:
+	SGA: le fait de subdiviser le sga en petite moire (granules)
+	BI: herarchie, normalisation
+		table fait: nombre des mesures
+		table dimensions: nombre des niveau dans le dimension donner(temp->annees->mois->jour)
