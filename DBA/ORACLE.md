@@ -369,35 +369,35 @@
 
             Chaque utilisateur dans Oracle peut avoir un tablespace par défaut, qui est le tablespace où ses objets sont créés par défaut s'aucun autre tablespace n'est spécifié. Ce tablespace par défaut peut être défini au niveau de l'utilisateur en utilisant la clause DEFAULT TABLESPACE dans l'instruction CREATE USER ou en modifiant l'utilisateur avec l'instruction ALTER USER.
 
-        - **Création d'un tablespace** :
+	        - **Création d'un tablespace** :
 
             - Pour créer un tablespace, utilisez la commande `CREATE TABLESPACE`. Vous pouvez spécifier diverses options telles que la taille, l'emplacement, etc.
 
               ```sql CREATE TABLESPACE nom_tablespace   DATAFILE 'chemin_vers_le_fichier_de_données' SIZE taille   [AUTOEXTEND ON [NEXT taille_extension] [MAXSIZE taille_max]];```
 
-        - **Associer un tablespace par défaut à un utilisateur** :
+	        - **Associer un tablespace par défaut à un utilisateur** :
 
             - Vous pouvez définir un tablespace par défaut pour un utilisateur en modifiant son profil ou en lui attribuant directement le tablespace.
 
               `ALTER USER nom_utilisateur DEFAULT TABLESPACE nom_tablespace;`
 
-        - **Vues liées aux tablespaces** :
+	        - **Vues liées aux tablespaces** :
 
             - Vous pouvez utiliser des vues telles que `DBA_TABLESPACES`, `USER_TABLESPACES` pour afficher des informations sur les tablespaces de la base de données.
 
-        - **Création d'objets sur un tablespace** :
+	        - **Création d'objets sur un tablespace** :
 
             - Pour créer des objets (tables, index, etc.) dans un tablespace spécifique, spécifiez le nom du tablespace lors de la création de l'objet.
 
               `CREATE TABLE nom_table (...)   TABLESPACE nom_tablespace;`
 
-        - **Suppression d'un tablespace avec ses objets** :
+	        - **Suppression d'un tablespace avec ses objets** :
 
             - Pour supprimer un tablespace avec tous ses objets, utilisez la commande `DROP TABLESPACE` avec l'option `INCLUDING CONTENTS AND DATAFILES`.
 
               `DROP TABLESPACE nom_tablespace INCLUDING CONTENTS AND DATAFILES;`
 
-        - **Gestion des quotas de tablespace** :
+	        - **Gestion des quotas de tablespace** :
 
             - Vous pouvez définir des quotas sur les tablespaces pour limiter la quantité de stockage qu'un utilisateur peut utiliser dans un tablespace donné.
 
@@ -409,32 +409,19 @@
 
             - Un profil est un ensemble de limites et de paramètres qui contrôlent les ressources disponibles pour un utilisateur de la base de données Oracle.
 
-        - **Création d'un Profil** :
+	        - **Création d'un Profil** :
 
-            - Pour créer un profil, utilisez la commande `CREATE PROFILE`. Vous pouvez spécifier des limites telles que le temps de connexion, le nombre de sessions, la consommation CPU, etc.
+	            - Pour créer un profil, utilisez la commande `CREATE PROFILE`. Vous pouvez spécifier des limites telles que le temps de connexion, le nombre de sessions, la consommation CPU, etc.`CREATE PROFILE nom_profil LIMIT {parameter [VALUE] | DEFAULT};`
 
-              `CREATE PROFILE nom_profil LIMIT {parameter [VALUE] | DEFAULT};`
+	        - **Assignation d'un Profil à un Utilisateur** :
 
-        - **Assignation d'un Profil à un Utilisateur** :
-
-            - Vous pouvez assigner un profil à un utilisateur lors de sa création en utilisant la clause `PROFILE` dans l'instruction `CREATE USER`, ou ultérieurement en utilisant la commande `ALTER USER`.
-
-              `CREATE USER nom_utilisateur IDENTIFIED BY mot_de_passe PROFILE nom_profil;`
-
-              `ALTER USER nom_utilisateur PROFILE nom_profil;`
-
-        - **Vues liées aux Profils** :
-
-            - Vous pouvez utiliser des vues telles que `DBA_PROFILES` ou `USER_PROFILES` pour afficher des informations sur les profils de la base de données.
-
-        - **Modification d'un Profil** :
-
-            - Pour modifier un profil existant, utilisez la commande `ALTER PROFILE`. Vous pouvez ajuster les limites et les paramètres selon les besoins.
-
-              `ALTER PROFILE nom_profil LIMIT {parameter [VALUE] | DEFAULT};`
-
-        - **Suppression d'un Profil** :
-
-            - Pour supprimer un profil, utilisez la commande `DROP PROFILE`.
-
-              `DROP PROFILE nom_profil;`
+	            - Vous pouvez assigner un profil à un utilisateur lors de sa création en utilisant la clause `PROFILE` dans l'instruction `CREATE USER`, ou ultérieurement en utilisant la commande `ALTER USER`.`CREATE USER nom_utilisateur IDENTIFIED BY mot_de_passe PROFILE nom_profil;`
+	              `ALTER USER nom_utilisateur PROFILE nom_profil;`
+	        - **Vues liées aux Profils** :
+	            - Vous pouvez utiliser des vues telles que `DBA_PROFILES` ou `USER_PROFILES` pour afficher des informations sur les profils de la base de données.
+	        - **Modification d'un Profil** :
+	            - Pour modifier un profil existant, utilisez la commande `ALTER PROFILE`. Vous pouvez ajuster les limites et les paramètres selon les besoins.
+	              `ALTER PROFILE nom_profil LIMIT {parameter [VALUE] | DEFAULT};`
+	        - **Suppression d'un Profil** :
+	            - Pour supprimer un profil, utilisez la commande `DROP PROFILE`.
+	              `DROP PROFILE nom_profil;`
