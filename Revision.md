@@ -8,3 +8,5 @@
 - DW
 	type de modelisation
 	Tables deimension et fait
+
+les operation de trie execute sur les tables space temporaire(example: Order BY)
