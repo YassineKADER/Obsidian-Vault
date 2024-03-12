@@ -32,7 +32,7 @@
             }
           },
           {
-            "id": "5725b95b5e0a2dbc",
+            "id": "f32c973b693e5a31",
             "type": "leaf",
             "state": {
               "type": "mindmap",
@@ -57,7 +57,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DBA/Revision.md",
+                "file": "DBA/Table Spaces.md",
                 "mode": "source",
                 "source": false
               }
@@ -67,12 +67,16 @@
             "id": "58463552aac96a8f",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "DBA/PDRITIDS.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -138,6 +142,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "DBA/ORACLE.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -154,6 +159,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "DBA/ORACLE.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -175,7 +181,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "DBA/ORACLE.md"
+              }
             }
           },
           {
@@ -206,14 +214,14 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "58463552aac96a8f",
+  "active": "2d72792c067bc090",
   "lastOpenFiles": [
-    "Cube OLAP.md",
-    "DBA/ORACLE.md",
+    "DBA/Table Spaces.md",
     "DBA/Revision.md",
     "DBA/PDRITIDS.md",
+    "Cube OLAP.md",
+    "DBA/ORACLE.md",
     "VLANS.md",
-    "DBA/Table Spaces.md",
     "DBA/DBA-NOTES&TPS.md",
     "DBA/DBA.md",
     "DBA/DBA-PNOTES.md",

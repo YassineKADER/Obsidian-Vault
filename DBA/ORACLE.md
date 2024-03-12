@@ -374,7 +374,7 @@
 
             - Pour créer un tablespace, utilisez la commande `CREATE TABLESPACE`. Vous pouvez spécifier diverses options telles que la taille, l'emplacement, etc.
 
-              ```sql CREATE TABLESPACE nom_tablespace   DATAFILE 'chemin_vers_le_fichier_de_données' SIZE taille   [AUTOEXTEND ON [NEXT taille_extension] [MAXSIZE taille_max]];```
+              ```CREATE TABLESPACE nom_tablespace   DATAFILE 'chemin_vers_le_fichier_de_données' SIZE taille   [AUTOEXTEND ON [NEXT taille_extension] [MAXSIZE taille_max]];```
 
 	        - **Associer un tablespace par défaut à un utilisateur** :
 
