@@ -35,12 +35,28 @@
             "id": "a678b9dc9205d052",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "VLANS.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "14640d276408f250",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Revision.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -106,6 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Revision.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -122,6 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Revision.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -143,7 +161,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Revision.md"
+              }
             }
           },
           {
@@ -174,8 +194,10 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "a678b9dc9205d052",
+  "active": "14640d276408f250",
   "lastOpenFiles": [
+    "VLANS.md",
+    "Revision.md",
     "DBA/ORACLE.md",
     "DBA/Table Spaces.md",
     "DBA/DBA-NOTES&TPS.md",
@@ -187,7 +209,6 @@
     "ADMINISTRATION SYS.md",
     "ACL.md",
     "Amplify-Android-Auth.md",
-    "VLANS.md",
     "V2ray.md",
     "Tomcat and JEE.md",
     "Setup Amplify For Android App.md",
