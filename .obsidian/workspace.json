@@ -57,14 +57,22 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Revision.md",
+                "file": "DBA/Revision.md",
                 "mode": "source",
                 "source": false
               }
             }
+          },
+          {
+            "id": "58463552aac96a8f",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {}
+            }
           }
         ],
-        "currentTab": 4
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -130,7 +138,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Revision.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -147,7 +154,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Revision.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -169,9 +175,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Revision.md"
-              }
+              "state": {}
             }
           },
           {
@@ -202,17 +206,18 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "14640d276408f250",
+  "active": "58463552aac96a8f",
   "lastOpenFiles": [
+    "Cube OLAP.md",
     "DBA/ORACLE.md",
-    "Revision.md",
+    "DBA/Revision.md",
+    "DBA/PDRITIDS.md",
     "VLANS.md",
     "DBA/Table Spaces.md",
     "DBA/DBA-NOTES&TPS.md",
     "DBA/DBA.md",
     "DBA/DBA-PNOTES.md",
     "DBA/warehouse.md",
-    "Cube OLAP.md",
     "AVT-SCRAPING.md",
     "ADMINISTRATION SYS.md",
     "ACL.md",

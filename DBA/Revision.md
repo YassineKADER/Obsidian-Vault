@@ -18,7 +18,7 @@ les fichier neccessaire pour le fonctionnement de bd:
 	2 fichier de jornalisation au moins, au cas ou une fichier saturer, le db switch a l'autre fichier
 
 Procedure d'execution d'un request d'interogation et la transaction comment le serveur interagit ?;
-parsing, analyse, fitch
+parsing, analyse, fitch [[PDRITIDS]]
 lberary cash: plan d'exucution d'un request
 pga se utiliser dans les request d'interogation, il ne utilse pas dans les transaction.
 
