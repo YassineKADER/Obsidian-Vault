@@ -64,7 +64,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -130,7 +130,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "DBA/ORACLE.md",
+                "file": "Revision.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -147,7 +147,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "DBA/ORACLE.md",
+                "file": "Revision.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -170,7 +170,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "DBA/ORACLE.md"
+                "file": "Revision.md"
               }
             }
           },
@@ -202,11 +202,11 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "2d72792c067bc090",
+  "active": "14640d276408f250",
   "lastOpenFiles": [
+    "DBA/ORACLE.md",
     "Revision.md",
     "VLANS.md",
-    "DBA/ORACLE.md",
     "DBA/Table Spaces.md",
     "DBA/DBA-NOTES&TPS.md",
     "DBA/DBA.md",
