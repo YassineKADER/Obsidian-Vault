@@ -20,30 +20,27 @@
             }
           },
           {
-            "id": "a678b9dc9205d052",
+            "id": "2d72792c067bc090",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DBA/DBA.md",
+                "file": "DBA/Table Spaces.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "2d72792c067bc090",
+            "id": "a678b9dc9205d052",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Table Spaces.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "graph",
+              "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -109,7 +106,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "DBA/DBA-NOTES&TPS.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -126,7 +122,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "DBA/DBA-NOTES&TPS.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -148,9 +143,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "DBA/DBA-NOTES&TPS.md"
-              }
+              "state": {}
             }
           },
           {
@@ -181,12 +174,14 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "585cccdb1d312efd",
+  "active": "a678b9dc9205d052",
   "lastOpenFiles": [
+    "DBA/ORACLE.md",
+    "DBA/DBA-NOTES&TPS.md",
+    "DBA/Table Spaces.md",
+    "DBA/DBA.md",
     "DBA/DBA-PNOTES.md",
     "DBA/warehouse.md",
-    "DBA/DBA-NOTES&TPS.md",
-    "DBA/ORACLE.md",
     "Cube OLAP.md",
     "AVT-SCRAPING.md",
     "ADMINISTRATION SYS.md",
@@ -195,9 +190,7 @@
     "VLANS.md",
     "V2ray.md",
     "Tomcat and JEE.md",
-    "Table Spaces.md",
     "Setup Amplify For Android App.md",
-    "DBA/DBA.md",
     "Untitled",
     "naruto.md",
     "Pasted image 20240229131917.png",
