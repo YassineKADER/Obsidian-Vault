@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DBA/Table Spaces.md",
+                "file": "DBA/ORACLE.md",
                 "mode": "source",
                 "source": false
               }
@@ -177,8 +177,8 @@
   "active": "a678b9dc9205d052",
   "lastOpenFiles": [
     "DBA/ORACLE.md",
-    "DBA/DBA-NOTES&TPS.md",
     "DBA/Table Spaces.md",
+    "DBA/DBA-NOTES&TPS.md",
     "DBA/DBA.md",
     "DBA/DBA-PNOTES.md",
     "DBA/warehouse.md",
