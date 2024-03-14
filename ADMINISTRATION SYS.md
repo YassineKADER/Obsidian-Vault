@@ -27,3 +27,11 @@ NTDS: c'est le fichier aui contient tous les information liee soit au objest ou 
 
 Role:DHCP, IIS, DNS etc...
 Fonctionality:ajou des fonctionalities comme telechargement etc....
+pourquoi ona besoin de migrer vers l'utilisation de domain?: pour la gestion centraliser
+
+**Les etapes pour joindre un pc a domain:**
+	1- il faut quil soit brancher au reseau
+	2- il a besoin d'un adress ip
+	3 - il a besoin d'adress de dns(si serveur loin)
+	4- il a besoin de gateway
+	5- migration de groupe de travail vers domain
