@@ -35,3 +35,7 @@ pourquoi ona besoin de migrer vers l'utilisation de domain?: pour la gestion cen
 	3 - il a besoin d'adress de dns(si serveur loin)
 	4- il a besoin de gateway
 	5- migration de groupe de travail vers domain
+on creer des groupe pour appliquer des droit commun a les membres de groupe
+
+Remote desktop
+start>outil administration> gestion serveur> bereu a distence
