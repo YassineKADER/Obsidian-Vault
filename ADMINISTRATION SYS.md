@@ -39,3 +39,4 @@ on creer des groupe pour appliquer des droit commun a les membres de groupe
 
 Remote desktop
 start>outil administration> gestion serveur> bereu a distence
+creation des dossier parteger+securiser seule utilisateur peut l'acceder
