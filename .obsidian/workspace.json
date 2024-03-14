@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DBA/ORACLE.md",
+                "file": "ADMINISTRATION SYS.md",
                 "mode": "source",
                 "source": false
               }
@@ -142,7 +142,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "DBA/ORACLE.md",
+                "file": "ADMINISTRATION SYS.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -159,7 +159,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "DBA/ORACLE.md",
+                "file": "ADMINISTRATION SYS.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -182,7 +182,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "DBA/ORACLE.md"
+                "file": "ADMINISTRATION SYS.md"
               }
             }
           },
@@ -216,19 +216,19 @@
   },
   "active": "2d72792c067bc090",
   "lastOpenFiles": [
+    "ACL.md",
+    "DBA/warehouse.md",
     "DBA/Table Spaces.md",
+    "DBA/ORACLE.md",
     "DBA/Revision.md",
     "DBA/PDRITIDS.md",
     "Cube OLAP.md",
-    "DBA/ORACLE.md",
     "VLANS.md",
     "DBA/DBA-NOTES&TPS.md",
     "DBA/DBA.md",
     "DBA/DBA-PNOTES.md",
-    "DBA/warehouse.md",
     "AVT-SCRAPING.md",
     "ADMINISTRATION SYS.md",
-    "ACL.md",
     "Amplify-Android-Auth.md",
     "V2ray.md",
     "Tomcat and JEE.md",
