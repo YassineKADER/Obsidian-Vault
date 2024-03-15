@@ -142,7 +142,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ADMINISTRATION SYS.md",
+                "file": "DBA/DBA-NOTES&TPS.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -159,7 +159,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ADMINISTRATION SYS.md",
+                "file": "DBA/DBA-NOTES&TPS.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -182,7 +182,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ADMINISTRATION SYS.md"
+                "file": "DBA/DBA-NOTES&TPS.md"
               }
             }
           },
