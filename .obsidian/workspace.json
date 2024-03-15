@@ -142,7 +142,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "DBA/DBA-NOTES&TPS.md",
+                "file": "ADMINISTRATION SYS.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -159,7 +159,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "DBA/DBA-NOTES&TPS.md",
+                "file": "ADMINISTRATION SYS.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -182,7 +182,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "DBA/DBA-NOTES&TPS.md"
+                "file": "ADMINISTRATION SYS.md"
               }
             }
           },
@@ -215,8 +215,9 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "80ea8cbdc1a73bd5",
+  "active": "2d72792c067bc090",
   "lastOpenFiles": [
+    "DBA/DBA-NOTES&TPS.md",
     "ACL.md",
     "DBA/warehouse.md",
     "DBA/Table Spaces.md",
@@ -225,7 +226,6 @@
     "DBA/PDRITIDS.md",
     "Cube OLAP.md",
     "VLANS.md",
-    "DBA/DBA-NOTES&TPS.md",
     "DBA/DBA.md",
     "DBA/DBA-PNOTES.md",
     "AVT-SCRAPING.md",

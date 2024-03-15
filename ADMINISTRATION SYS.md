@@ -45,4 +45,7 @@ creation des dossier parteger+securiser seule utilisateur peut l'acceder
 lecteur reseau:
 	il ne permet d'acceder a un dossier via une lecteur
 	users/profile/connecter/<chemainde dossier partager/\%username\%>
-	
+profile: env d'un utlilisateur(documents, images etc...)
+	mobile|itinerent
+	local
+	Obligatoire: mobile mais obligatoire lorsque on change dans profile lor de deconnection le profile return a l'etat initiale
