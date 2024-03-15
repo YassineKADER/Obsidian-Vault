@@ -1,6 +1,7 @@
 {
   "accentColor": "",
   "baseFontSize": 16,
-  "cssTheme": "",
-  "theme": "obsidian"
+  "cssTheme": "ion",
+  "theme": "obsidian",
+  "translucency": false
 }

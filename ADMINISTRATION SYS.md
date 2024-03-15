@@ -49,3 +49,6 @@ profile: env d'un utlilisateur(documents, images etc...)
 	mobile|itinerent
 	local
 	Obligatoire: mobile mais obligatoire lorsque on change dans profile lor de deconnection le profile return a l'etat initiale
+Difference entre gpo applique sur utilisateur ou ordinateur:
+	utilisateur just sur le profile d'utilisateur
+	ordinateur sur tous les compte connect 
