@@ -52,3 +52,4 @@ profile: env d'un utlilisateur(documents, images etc...)
 Difference entre gpo applique sur utilisateur ou ordinateur:
 	utilisateur just sur le profile d'utilisateur
 	ordinateur sur tous les compte connect 
+	forcer mis a jour : gpupdate /force
