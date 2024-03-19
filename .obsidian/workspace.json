@@ -25,26 +25,6 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cube OLAP.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "f32c973b693e5a31",
-            "type": "leaf",
-            "state": {
-              "type": "mindmap",
-              "state": {}
-            }
-          },
-          {
-            "id": "a678b9dc9205d052",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
                 "file": "VLANS.md",
                 "mode": "source",
                 "source": false
@@ -52,31 +32,19 @@
             }
           },
           {
-            "id": "14640d276408f250",
+            "id": "b5ce0e9aa057b722",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DBA/Table Spaces.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "58463552aac96a8f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "DBA/PDRITIDS.md",
+                "file": "ACL.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -142,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Cube OLAP.md",
+                "file": "ACL.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -159,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Cube OLAP.md",
+                "file": "ACL.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -182,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Cube OLAP.md"
+                "file": "ACL.md"
               }
             }
           },
@@ -215,10 +183,13 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "2d72792c067bc090",
+  "active": "b5ce0e9aa057b722",
   "lastOpenFiles": [
-    "ADMINISTRATION SYS.md",
+    "Pasted image 20240319142040.png",
+    "Untitled.md",
+    "VLANS.md",
     "Cube OLAP.md",
+    "ADMINISTRATION SYS.md",
     "DBA/ORACLE.md",
     "DBA/PDRITIDS.md",
     "DBA/DBA-NOTES&TPS.md",
@@ -226,7 +197,6 @@
     "DBA/warehouse.md",
     "DBA/Table Spaces.md",
     "DBA/Revision.md",
-    "VLANS.md",
     "DBA/DBA.md",
     "DBA/DBA-PNOTES.md",
     "AVT-SCRAPING.md",
