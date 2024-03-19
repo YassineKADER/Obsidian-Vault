@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ADMINISTRATION SYS.md",
+                "file": "Cube OLAP.md",
                 "mode": "source",
                 "source": false
               }
@@ -142,7 +142,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ADMINISTRATION SYS.md",
+                "file": "Cube OLAP.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -159,7 +159,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ADMINISTRATION SYS.md",
+                "file": "Cube OLAP.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -182,7 +182,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ADMINISTRATION SYS.md"
+                "file": "Cube OLAP.md"
               }
             }
           },
@@ -217,9 +217,9 @@
   },
   "active": "2d72792c067bc090",
   "lastOpenFiles": [
+    "ADMINISTRATION SYS.md",
     "Cube OLAP.md",
     "DBA/ORACLE.md",
-    "ADMINISTRATION SYS.md",
     "DBA/PDRITIDS.md",
     "DBA/DBA-NOTES&TPS.md",
     "ACL.md",
