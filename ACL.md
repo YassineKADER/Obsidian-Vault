@@ -17,3 +17,5 @@ Router (config) #acees-group 101 out # affect the acl to interface
 deny the 192.168.3.0 network from acccessing to http on the host 192.168.1.3
 ![[Pasted image 20240319145056.png]] 
 deny ping from host 192.168.2.2 to 192.168.1.2
+![[Pasted image 20240319145649.png]]
+deny a host from using tftp on the server
