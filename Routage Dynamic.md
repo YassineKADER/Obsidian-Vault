@@ -31,8 +31,8 @@ In this example:
 
 ```
 router eigrp 1
- network 10.0.0.0
- network 192.168.1.0
+ network 10.0.0.0 0.255.255.255
+ network 192.168.1.0 0.0.0.255
 ```
 In this example:
 
