@@ -65,3 +65,16 @@
 - Utilisateur : Juste sur le profil de l'utilisateur.
 - Ordinateur : Sur tous les comptes connectés.
 - Forcer la mise à jour : gpupdate /force
+## Other Things:
+
+- **Domaine** : Un domaine est une limite administrative dans laquelle un serveur qui exécute Microsoft Active Directory fournit des services d'annuaire. Les domaines sont généralement configurés en fonction des besoins de gestion de votre organisation.
+
+- **Sous-domaine** : Un sous-domaine est un domaine qui fait partie d'un domaine plus grand dans le système de noms de domaine (DNS) hiérarchique. Par exemple, "sales.example.com" est un sous-domaine du domaine "example.com".
+
+- **Forêt** : Une forêt est une collection de domaines qui partagent un catalogue global, une configuration de schéma et une configuration de domaine. Les forêts permettent aux organisations de regrouper et d'administrer plusieurs domaines.
+
+- **Arborescence** : Une arborescence est une hiérarchie de domaines dans Active Directory. Chaque arborescence partage un seul schéma de domaine, qui définit les objets et les attributs qui peuvent être créés dans Active Directory.
+
+- **Contrôleur de domaine (DC)** : Un contrôleur de domaine est un serveur qui exécute une version du système d'exploitation Windows Server et a Active Directory Domain Services installé. Lorsqu'un serveur devient un contrôleur de domaine, il contient une copie complète de tous les objets du domaine et contrôle les modifications apportées à ces objets.
+
+- **Active Directory (AD)** : Active Directory est un service d'annuaire qui identifie tous les éléments d'un réseau. Il permet aux administrateurs de gérer les éléments du réseau et les utilisateurs de se connecter à des ressources réseau.
