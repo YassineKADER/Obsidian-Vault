@@ -95,12 +95,8 @@
             "id": "2103175a0edb842a",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "ACL.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "graph",
+              "state": {}
             }
           }
         ],
@@ -170,7 +166,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ACL.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -187,7 +182,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ACL.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -209,9 +203,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "ACL.md"
-              }
+              "state": {}
             }
           },
           {
@@ -245,12 +237,13 @@
   },
   "active": "2103175a0edb842a",
   "lastOpenFiles": [
+    "ADMINISTRATION SYS.md",
+    "ACL.md",
     "Pasted image 20240320145312.png",
     "Redustribution.md",
     "StandBy.md",
     "Routage Dynamic.md",
     "VLANS.md",
-    "ACL.md",
     "Untitled.md",
     "Cube OLAP.md",
     "Setup Amplify For Android App.md",
@@ -266,7 +259,6 @@
     "Pasted image 20240319144353.png",
     "Pasted image 20240319143817.png",
     "Pasted image 20240319142040.png",
-    "ADMINISTRATION SYS.md",
     "DBA/ORACLE.md",
     "DBA/DBA-NOTES&TPS.md",
     "DBA/DBA.md",
