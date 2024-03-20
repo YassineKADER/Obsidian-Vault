@@ -90,9 +90,19 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "2103175a0edb842a",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.5.11"
+              }
+            }
           }
         ],
-        "currentTab": 6
+        "currentTab": 7
       }
     ],
     "direction": "vertical"
@@ -231,7 +241,7 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "0e9dc68a0bc2ec5f",
+  "active": "2103175a0edb842a",
   "lastOpenFiles": [
     "Redustribution.md",
     "StandBy.md",
