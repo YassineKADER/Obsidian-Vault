@@ -122,9 +122,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "d452f2f22d534b83",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Subneting.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 9
+        "currentTab": 10
       }
     ],
     "direction": "vertical"
@@ -190,7 +202,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Routage Statique.md",
+                "file": "Subneting.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -207,7 +219,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Routage Statique.md",
+                "file": "Subneting.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -230,7 +242,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Routage Statique.md"
+                "file": "Subneting.md"
               }
             }
           },
@@ -263,10 +275,11 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "59a67113adb7d7d1",
+  "active": "d452f2f22d534b83",
   "lastOpenFiles": [
-    "Reseau/ACL.md",
     "Routage Statique.md",
+    "Subneting.md",
+    "Reseau/ACL.md",
     "Reseau/Windows Server.md",
     "Reseau/VTP.md",
     "Reseau/VLANS.md",
@@ -298,7 +311,6 @@
     "DBA/DBA-NOTES&TPS.md",
     "DBA/DBA.md",
     "V2ray.md",
-    "naruto.md",
     "Reseau/img/Pasted image 20240229131917.png",
     "DBA/Pasted image 20240224154828.png",
     "DBA/Pasted image 20240224153247.png",
