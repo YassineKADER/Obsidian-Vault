@@ -74,6 +74,13 @@
 # GPO
 **Un Objet de stratégie de groupe (GPO)** est un ensemble de paramètres créés à l’aide de l’éditeur de stratégie de groupe de la console de gestion Microsoft (MMC). Les GPO peuvent être associés à un ou plusieurs conteneurs Active Directory, y compris des sites, des domaines ou des unités organisationnelles (OU).
 **Les GPO** vous permettent d’appliquer les mêmes paramètres à tous les utilisateurs et ordinateurs dans un domaine Active Directory en fournissant un ensemble de règles et de paramètres pour l’environnement Windows.Cela vous permet de gérer et de configurer de manière centralisée les systèmes d’exploitation, les utilisateurs et les applications.
+# Les types des profiles:
+**Profil local** : Un profil local est créé la première fois qu’un utilisateur se connecte à un ordinateur. Le profil est stocké sur le disque dur local de l’ordinateur. [Les modifications apportées au profil local sont spécifiques à l’utilisateur et à l’ordinateur sur lequel les modifications sont effectuées]
+
+**Profil itinérant (mobile)** : Un profil utilisateur itinérant est une copie du profil local qui est copiée et stockée sur un partage de serveur. Ce profil est téléchargé sur n’importe quel ordinateur sur lequel un utilisateur se connecte sur un réseau. Les modifications apportées à un profil utilisateur itinérant sont synchronisées avec la copie du serveur du profil lorsque l’utilisateur se déconnecte. [L’avantage des profils utilisateurs itinérants est que les utilisateurs n’ont pas besoin de créer un profil sur chaque ordinateur qu’ils utilisent sur un réseau]
+
+**Profil obligatoire** : Un profil utilisateur obligatoire est un type de profil que les administrateurs peuvent utiliser pour spécifier des paramètres pour les utilisateurs. Seuls les administrateurs système peuvent apporter des modifications aux profils utilisateurs obligatoires. [Les modifications apportées par les utilisateurs aux paramètres du bureau sont perdues lorsque l’utilisateur se déconnecte]
+
 ## Other Things:
 
 - **Domaine** : Un domaine est une limite administrative dans laquelle un serveur qui exécute Microsoft Active Directory fournit des services d'annuaire. Les domaines sont généralement configurés en fonction des besoins de gestion de votre organisation.

@@ -130,7 +130,7 @@
               "type": "markdown",
               "state": {
                 "file": "Reseau/Windows Server.md",
-                "mode": "preview",
+                "mode": "source",
                 "source": false
               }
             }
@@ -278,10 +278,10 @@
   "active": "d452f2f22d534b83",
   "lastOpenFiles": [
     "Reseau/ADMINISTRATION SYS.md",
+    "Reseau/Windows Server.md",
     "Subneting.md",
     "Routage Statique.md",
     "Reseau/ACL.md",
-    "Reseau/Windows Server.md",
     "Reseau/VTP.md",
     "Reseau/VLANS.md",
     "Reseau/StandBy.md",
