@@ -76,6 +76,8 @@
 **Les GPO** vous permettent d’appliquer les mêmes paramètres à tous les utilisateurs et ordinateurs dans un domaine Active Directory en fournissant un ensemble de règles et de paramètres pour l’environnement Windows.Cela vous permet de gérer et de configurer de manière centralisée les systèmes d’exploitation, les utilisateurs et les applications.
 # Les types des profiles:
 
+**Profil d’utilisateur** dans Active Directory est un ensemble de données qui définissent l’environnement de travail d’un utilisateur. [Il contient des informations spécifiques à l’utilisateur, telles que les paramètres de l’interface utilisateur, les fichiers de bureau, les scripts de connexion réseau, et bien d’autres]
+
 **Profil local** : Un profil local est créé la première fois qu’un utilisateur se connecte à un ordinateur. Le profil est stocké sur le disque dur local de l’ordinateur. [Les modifications apportées au profil local sont spécifiques à l’utilisateur et à l’ordinateur sur lequel les modifications sont effectuées]
 
 **Profil itinérant (mobile)** : Un profil utilisateur itinérant est une copie du profil local qui est copiée et stockée sur un partage de serveur. Ce profil est téléchargé sur n’importe quel ordinateur sur lequel un utilisateur se connecte sur un réseau. Les modifications apportées à un profil utilisateur itinérant sont synchronisées avec la copie du serveur du profil lorsque l’utilisateur se déconnecte. [L’avantage des profils utilisateurs itinérants est que les utilisateurs n’ont pas besoin de créer un profil sur chaque ordinateur qu’ils utilisent sur un réseau]
