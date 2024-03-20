@@ -14,7 +14,7 @@
 - Un conteneur (Dossier) qui permet d'ajouter des utilisateurs, des groupes, des comptes d'ordinateurs, et d'appliquer des droits d'accès (Objet de stratégie de groupe : GPO).
 
 ## Groupe
-- C'est un groupe d'utilisateurs, ayant les mêmes droits, sur lequel on applique des politiques de groupe.
+- C'est un groupe d'utilisateurs, ayant les mêmes droits, sur lequel on applique des politiques de groupe (Objet de stratégie de groupe : GPO).
 - Types de groupes :
   - **Groupe de sécurité** : Un groupe normal qui contient des utilisateurs que nous pouvons créer.
   - **Groupe de distribution** : Un groupe de messagerie.
