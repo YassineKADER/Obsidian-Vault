@@ -16,12 +16,12 @@
 - Création de Tablespace Temporaire :
 ```SQL
 CREATE TEMPORARY TABLESPACE nom_tablespace
-TEMPFILE 'chemin_vers_fichier' TAILLE taille;
+TEMPFILE 'chemin_vers_fichier' SIZE taille;
 ```
 - Création de Tablespace d'Annulation :
 ```SQL
 CREATE UNDO TABLESPACE nom_tablespace_annulation
-DATAFILE 'chemin_vers_fichier' TAILLE taille;
+DATAFILE 'chemin_vers_fichier' SIZE taille;
 ```
 
 ### Attribution des Tablespaces
@@ -31,7 +31,7 @@ ALTER USER nom_utilisateur DEFAULT TABLESPACE nom_tablespace;
 ```
 - Attribution de Tablespace Temporaire :
 ```SQL
-ALTER USER nom_utilisateur TABLESPACE TEMPORAIRE nom_tablespace;
+ALTER USER nom_utilisateur TEMPORARY TABLESPACE nom_tablespace;
 ```
 - Attribution de Tablespace Undo:
 ```sql
