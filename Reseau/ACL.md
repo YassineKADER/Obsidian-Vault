@@ -42,8 +42,6 @@ ip access-group BLOCK_HTTP in ! Applique l'ACL BLOCK_HTTP en entrée sur l'inter
 - **In**: When an ACL is applied "in" on an interface, it means that the ACL is applied to incoming traffic, i.e., traffic that is coming into the interface from the network. This includes traffic destined for the device or network behind the interface.
     
 - **Out**: On the other hand, when an ACL is applied "out" on an interface, it means that the ACL is applied to outgoing traffic, i.e., traffic leaving the interface and going towards the network. This includes traffic originating from the device or network behind the interface.
-    
-
 ### Examples:
 
 1. **ACL Applied Inbound (In)**:

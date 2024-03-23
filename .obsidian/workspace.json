@@ -112,18 +112,6 @@
             }
           },
           {
-            "id": "59a67113adb7d7d1",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Routage Statique.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "d452f2f22d534b83",
             "type": "leaf",
             "state": {
@@ -136,7 +124,7 @@
             }
           }
         ],
-        "currentTab": 10
+        "currentTab": 9
       }
     ],
     "direction": "vertical"
@@ -202,7 +190,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Reseau/ACL.md",
+                "file": "img/WhatsApp_Image_2023-01-25_at_20.41.10.jpeg",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -219,7 +207,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Reseau/ACL.md",
+                "file": "img/WhatsApp_Image_2023-01-25_at_20.41.10.jpeg",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -242,7 +230,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Reseau/ACL.md"
+                "file": "img/WhatsApp_Image_2023-01-25_at_20.41.10.jpeg"
               }
             }
           },
@@ -272,52 +260,59 @@
       "command-palette:Open command palette": false,
       "obsidian-excalidraw-plugin:Create new drawing": false,
       "obsidian-advanced-slides:Show Slide Preview": false,
-      "table-editor-obsidian:Advanced Tables Toolbar": false
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "obsidian-importer:Open Importer": false
     }
   },
-  "active": "d452f2f22d534b83",
+  "active": "eefa2137d4f11a0b",
   "lastOpenFiles": [
-    "Reseau/Windows Server.md",
-    "Reseau/ADMINISTRATION SYS.md",
-    "Subneting.md",
-    "Routage Statique.md",
+    "img/W3sDesign_Abstract_Factory_Design_Pattern_UML.jpg",
+    "img/1f19c-ahwach5057b.webp",
+    "img/Untitled.md",
+    "img",
     "Reseau/ACL.md",
-    "Reseau/VTP.md",
-    "Reseau/VLANS.md",
-    "Reseau/StandBy.md",
-    "Reseau/Redustribution.md",
-    "Reseau/Routage Dynamic.md",
-    "Amplify-Android-Auth.md",
-    "Reseau/img/Pasted image 20240320145312.png",
-    "AVT-SCRAPING.md",
-    "Reseau/img",
-    "Reseau/Untitled.md",
-    "Tomcat and JEE.md",
-    "RESEAU.md",
-    "Reseau",
-    "DBA/Cube OLAP.md",
-    "Setup Amplify For Android App.md",
-    "DBA/warehouse.md",
-    "DBA/DBA-PNOTES.md",
-    "DBA/PDRITIDS.md",
-    "DBA/Revision.md",
-    "DBA/Table Spaces.md",
-    "Reseau/img/Pasted image 20240319145649.png",
-    "Reseau/img/Pasted image 20240319145056.png",
-    "Reseau/img/Pasted image 20240319144353.png",
-    "Reseau/img/Pasted image 20240319143817.png",
-    "Reseau/img/Pasted image 20240319142040.png",
-    "DBA/ORACLE.md",
-    "DBA/DBA-NOTES&TPS.md",
-    "DBA/DBA.md",
-    "V2ray.md",
-    "Reseau/img/Pasted image 20240229131917.png",
-    "DBA/Pasted image 20240224154828.png",
-    "DBA/Pasted image 20240224153247.png",
-    "DBA/Pasted image 20240224150645.png",
-    "DBA",
+    "img/Untitled 12 6.png",
+    "img/Untitled 11 7.png",
+    "img/Untitled 10 11.png",
+    "img/Untitled 9 12.png",
+    "img/Untitled 8 15.png",
+    "img/Untitled 7 18.png",
+    "img/Untitled 6 20.png",
+    "img/Untitled 5 23.png",
+    "img/Untitled 4 26.png",
+    "img/oop.pdf",
+    "img/Screencast_from_10-16-2022_095152_PM.webm",
+    "IMG_5281.heic",
+    "IMG_5282.heic",
+    "IMG_5279.heic",
+    "IMG_5276.heic",
+    "Notion/Quick Note/DEAD LINE/Card 2.md",
+    "Notion/Quick Note/DEAD LINE/Card 3.md",
+    "Notion/Quick Note/DEAD LINE/Card 1.md",
+    "Notion/Personal Home/Travel Plans/Europe Trip.md",
+    "Notion/Personal Home/Recipes/Vegetable Lo Mein for Two.md",
+    "Notion/COMPUTER-SCIENCE/JS/Express.md",
+    "Notion/COMPUTER-SCIENCE/PHP-advanced/Class Diagram (UML)/Class Diagram (UML).md",
+    "Notion/COMPUTER-SCIENCE/CSS/CSS SELECTOR/CSS SELECTOR.md",
+    "Notion/COMPUTER-SCIENCE/CSS/CSS-GRID/CSS-GRID.md",
+    "Notion/COMPUTER-SCIENCE/Networking-CCNA2 (in french)/concept de commutation.md",
+    "Notion/COMPUTER-SCIENCE/Networking-CCNA2 (in french)/Resume/Resume.md",
+    "Notion/COMPUTER-SCIENCE/Networking-CCNA2 (in french)/Routage Inter-VLAN/Routage Inter-VLAN.md",
+    "Notion/COMPUTER-SCIENCE/Networking-CCNA2 (in french)/trunking/trunking.md",
+    "Notion/COMPUTER-SCIENCE/Networking-CCNA2 (in french)/STP/STP.md",
+    "Notion/COMPUTER-SCIENCE/Networking-CCNA2 (in french)/les Aventages de vlans/les Aventages de vlans.md",
+    "Notion/COMPUTER-SCIENCE/Networking-CCNA2 (in french)/les types de niveau de vlan.md",
+    "Notion/COMPUTER-SCIENCE/Networking-CCNA2 (in french)/Les types de  vlan/Les types de  vlan.md",
+    "Notion/COMPUTER-SCIENCE/Networking-CCNA2 (in french)/VLAN/VLAN.md",
+    "Notion/Task List/Take Fig on a walk.md",
+    "Notion/Task List/Untitled.md",
+    "Notion/Task List/New Task.md",
+    "Notion/Reading List/Media/Jane Eyre and the Invention of Self/Jane Eyre and the Invention of Self.md",
+    "Notion/Reading List/Media/Bon Appétit Foodcast.md",
+    "Notion/COMPUTER-SCIENCE/PHP-advanced/Class Diagram (UML)",
+    "Notion/COMPUTER-SCIENCE/CSS/CSS SELECTOR",
+    "Notion/COMPUTER-SCIENCE/CSS/CSS-GRID",
     "Untitled.canvas",
-    "Untitled 1.canvas",
-    "Excalidraw"
+    "Untitled 1.canvas"
   ]
 }
