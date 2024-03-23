@@ -48,6 +48,7 @@ ALTER TABLESPACE nom_tablespace {ADD|DELETE} DATAFILE 'chemin_vers_fichier' SIZE
 - Suppression des Tablespaces :
 ```SQL
 DROP TABLESPACE nom_tablespace;
+DROP TABLESPACE <tablespace_name> INCLUDING CONTENTS AND DATAFILES;
 ```
 - Surveillance des Tablespaces :
 ```SQL
@@ -56,7 +57,7 @@ SELECT * FROM DBA_TABLESPACES;
 ### Opérations supplémentaires
 - Ajout de Fichiers de Données :
 ```SQL
-ALTER TABLESPACE nom_tablespace AJOUTER DATAFILE 'chemin_vers_fichier' TAILLE taille;
+ALTER TABLESPACE nom_tablespace ADD DATAFILE 'chemin_vers_fichier' TAILLE taille;
 ```
 - Redimensionnement des Fichiers de Données :
 ```SQL

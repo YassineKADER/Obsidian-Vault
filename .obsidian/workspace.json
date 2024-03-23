@@ -117,7 +117,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Reseau/ACL.md",
+                "file": "DBA/Table Spaces.md",
                 "mode": "source",
                 "source": false
               }
@@ -190,7 +190,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Reseau/ACL.md",
+                "file": "DBA/Table Spaces.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -207,7 +207,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Reseau/ACL.md",
+                "file": "DBA/Table Spaces.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -230,7 +230,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Reseau/ACL.md"
+                "file": "DBA/Table Spaces.md"
               }
             }
           },
@@ -266,12 +266,14 @@
   },
   "active": "d452f2f22d534b83",
   "lastOpenFiles": [
+    "DBA/DBA.md",
+    "DBA/Cube OLAP.md",
+    "Reseau/ACL.md",
     "img/WhatsApp_Image_2023-01-25_at_20.41.10.jpeg",
     "img/W3sDesign_Abstract_Factory_Design_Pattern_UML.jpg",
     "img/1f19c-ahwach5057b.webp",
     "img/Untitled.md",
     "img",
-    "Reseau/ACL.md",
     "img/Untitled 12 6.png",
     "img/Untitled 11 7.png",
     "img/Untitled 10 11.png",
@@ -279,7 +281,6 @@
     "img/Untitled 8 15.png",
     "img/Untitled 7 18.png",
     "img/Untitled 6 20.png",
-    "img/Untitled 5 23.png",
     "img/oop.pdf",
     "img/Screencast_from_10-16-2022_095152_PM.webm",
     "IMG_5281.heic",
@@ -308,7 +309,6 @@
     "Notion/Task List/Untitled.md",
     "Notion/Task List/New Task.md",
     "Notion/Reading List/Media/Jane Eyre and the Invention of Self/Jane Eyre and the Invention of Self.md",
-    "Notion/Reading List/Media/Bon Appétit Foodcast.md",
     "Notion/COMPUTER-SCIENCE/PHP-advanced/Class Diagram (UML)",
     "Notion/COMPUTER-SCIENCE/CSS/CSS SELECTOR",
     "Notion/COMPUTER-SCIENCE/CSS/CSS-GRID",
