@@ -8,11 +8,15 @@
         "type": "tabs",
         "children": [
           {
-            "id": "2c798f9af2c3aa7e",
+            "id": "55cf52a1245111ac",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "DBA/Revision.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +85,7 @@
         "state": {
           "type": "backlink",
           "state": {
+            "file": "DBA/Revision.md",
             "collapseAll": false,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -97,6 +102,7 @@
         "state": {
           "type": "outgoing-link",
           "state": {
+            "file": "DBA/Revision.md",
             "linksCollapsed": false,
             "unlinkedCollapsed": true
           }
@@ -107,7 +113,9 @@
         "type": "leaf",
         "state": {
           "type": "outline",
-          "state": {}
+          "state": {
+            "file": "DBA/Revision.md"
+          }
         }
       }
     ],
@@ -126,8 +134,13 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "2c798f9af2c3aa7e",
+  "active": "fa49e373100e0d0a",
   "lastOpenFiles": [
+    "/Reseau/Routage Statique.md",
+    "/Reseau/Routage Dynamic.md",
+    "/DBA/Table Spaces.md",
+    "Notion/COMPUTER-SCIENCE/Networking-CCNA2 (in french)/les Aventages de vlans/les Aventages de vlans.md",
+    "Notion/COMPUTER-SCIENCE/Networking-CCNA2 (in french)/VLAN/VLAN.md",
     "Reseau/Windows Server.md",
     "Reseau/Routage Statique.md",
     "Reseau/Routage Dynamic.md",
@@ -153,17 +166,12 @@
     "/Reseau/img/Pasted image 20240319143817.png",
     "/Reseau/VTP.md",
     "/Reseau/StandBy.md",
-    "/Reseau/Routage Dynamic.md",
     "/Reseau/Redustribution.md",
     "/Subneting.md",
     "/Routage Statique.md",
     "Reseau/VLANS.md",
     "Reseau/Amplify-Android-Auth.md",
     "/Reseau/ACL.md",
-    "DBA/Cube OLAP.md",
-    "/Reseau/VLANS.md",
-    "/Reseau/Amplify-Android-Auth.md",
-    "/DBA/Cube OLAP.md",
     "Reseau/img",
     "Reseau",
     "/Reseau/img",
