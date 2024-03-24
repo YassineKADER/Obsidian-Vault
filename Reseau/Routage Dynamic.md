@@ -1,6 +1,6 @@
 ### RIPv2 Configuration Example:
 
-```
+```shell
 router rip
  version 2
  network 10.0.0.0
@@ -15,7 +15,7 @@ In this example:
 
 ### OSPF Configuration Example:
 
-```
+```bash
 router ospf 1
  network 10.0.0.0 0.255.255.255 area 0
  network 192.168.1.0 0.0.0.255 area 0
@@ -29,7 +29,7 @@ In this example:
 
 ### EIGRP Configuration Example:
 
-```
+```bash
 router eigrp 1
  network 10.0.0.0 0.255.255.255
  network 192.168.1.0 0.0.0.255
