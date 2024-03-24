@@ -117,7 +117,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Reseau/ACL.md",
+                "file": "Reseau/ADMINISTRATION SYS.md",
                 "mode": "source",
                 "source": false
               }
@@ -190,7 +190,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Reseau/ACL.md",
+                "file": "Reseau/ADMINISTRATION SYS.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -207,7 +207,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Reseau/ACL.md",
+                "file": "Reseau/ADMINISTRATION SYS.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -230,7 +230,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Reseau/ACL.md"
+                "file": "Reseau/ADMINISTRATION SYS.md"
               }
             }
           },
@@ -266,12 +266,21 @@
   },
   "active": "d452f2f22d534b83",
   "lastOpenFiles": [
+    "Reseau/Routage Dynamic.md",
+    "Reseau/Routage Statique.md",
+    "Reseau/StandBy.md",
+    "Reseau/Subneting.md",
+    "Reseau/VLANS.md",
+    "Reseau/VTP.md",
+    "Reseau/ACL.md",
+    "DBA/Table Spaces.md",
+    "DBA/DBA.md",
+    "DBA/Cube OLAP.md",
     "img/WhatsApp_Image_2023-01-25_at_20.41.10.jpeg",
     "img/W3sDesign_Abstract_Factory_Design_Pattern_UML.jpg",
     "img/1f19c-ahwach5057b.webp",
     "img/Untitled.md",
     "img",
-    "Reseau/ACL.md",
     "img/Untitled 12 6.png",
     "img/Untitled 11 7.png",
     "img/Untitled 10 11.png",
@@ -279,7 +288,6 @@
     "img/Untitled 8 15.png",
     "img/Untitled 7 18.png",
     "img/Untitled 6 20.png",
-    "img/Untitled 5 23.png",
     "img/oop.pdf",
     "img/Screencast_from_10-16-2022_095152_PM.webm",
     "IMG_5281.heic",
@@ -301,14 +309,6 @@
     "Notion/COMPUTER-SCIENCE/Networking-CCNA2 (in french)/trunking/trunking.md",
     "Notion/COMPUTER-SCIENCE/Networking-CCNA2 (in french)/STP/STP.md",
     "Notion/COMPUTER-SCIENCE/Networking-CCNA2 (in french)/les Aventages de vlans/les Aventages de vlans.md",
-    "Notion/COMPUTER-SCIENCE/Networking-CCNA2 (in french)/les types de niveau de vlan.md",
-    "Notion/COMPUTER-SCIENCE/Networking-CCNA2 (in french)/Les types de  vlan/Les types de  vlan.md",
-    "Notion/COMPUTER-SCIENCE/Networking-CCNA2 (in french)/VLAN/VLAN.md",
-    "Notion/Task List/Take Fig on a walk.md",
-    "Notion/Task List/Untitled.md",
-    "Notion/Task List/New Task.md",
-    "Notion/Reading List/Media/Jane Eyre and the Invention of Self/Jane Eyre and the Invention of Self.md",
-    "Notion/Reading List/Media/Bon Appétit Foodcast.md",
     "Notion/COMPUTER-SCIENCE/PHP-advanced/Class Diagram (UML)",
     "Notion/COMPUTER-SCIENCE/CSS/CSS SELECTOR",
     "Notion/COMPUTER-SCIENCE/CSS/CSS-GRID",

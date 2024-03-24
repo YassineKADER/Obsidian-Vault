@@ -7,9 +7,11 @@ Nous allons configurer des routes statiques sur le routeur pour permettre au ré
 
 Voici comment cela peut être configuré :
 
+```zsh
 Router> enable
 Router# configure terminal
 Router(config)# ip route 10.0.0.0 255.255.255.0 192.168.1.2
+```
 
 Dans cet exemple :
 
