@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DBA/Revision.md",
+                "file": "Reseau/Windows Server.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "DBA/Revision.md",
+            "file": "Reseau/Windows Server.md",
             "collapseAll": false,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
         "state": {
           "type": "outgoing-link",
           "state": {
-            "file": "DBA/Revision.md",
+            "file": "Reseau/Windows Server.md",
             "linksCollapsed": false,
             "unlinkedCollapsed": true
           }
@@ -114,7 +114,7 @@
         "state": {
           "type": "outline",
           "state": {
-            "file": "DBA/Revision.md"
+            "file": "Reseau/Windows Server.md"
           }
         }
       }
@@ -136,26 +136,28 @@
   },
   "active": "55cf52a1245111ac",
   "lastOpenFiles": [
+    "Reseau/Routage Statique.md",
+    "Reseau/ADMINISTRATION SYS.md",
+    "Reseau/Redustribution.md",
+    "Reseau/StandBy.md",
+    "Reseau/Windows Server.md",
+    "Reseau/ACL.md",
+    "DBA/warehouse.md",
+    "DBA/Table Spaces.md",
+    "DBA/Revision.md",
     "DBA/PDRITIDS.md",
     "DBA/ORACLE.md",
     "DBA/DBA-PNOTES.md",
     "DBA/DBA-NOTES&TPS.md",
     "DBA/DBA.md",
     "DBA/Cube OLAP.md",
-    "Reseau/Redustribution.md",
-    "Reseau/ADMINISTRATION SYS.md",
-    "DBA/Revision.md",
-    "Reseau/ACL.md",
     "/Reseau/Routage Statique.md",
     "/Reseau/Routage Dynamic.md",
     "/DBA/Table Spaces.md",
     "Notion/COMPUTER-SCIENCE/Networking-CCNA2 (in french)/les Aventages de vlans/les Aventages de vlans.md",
     "Notion/COMPUTER-SCIENCE/Networking-CCNA2 (in french)/VLAN/VLAN.md",
-    "Reseau/Windows Server.md",
-    "Reseau/Routage Statique.md",
     "Reseau/Routage Dynamic.md",
     "Reseau/VTP.md",
-    "Reseau/StandBy.md",
     "Reseau/Subneting.md",
     "/Reseau/Windows Server.md",
     "Amplify-Android-Auth.md",
@@ -166,12 +168,10 @@
     "Reseau/img/Pasted image 20240319143817.png",
     "Reseau/img/Pasted image 20240319142040.png",
     "Reseau/img/Pasted image 20240320145312.png",
-    "/Reseau/ADMINISTRATION SYS.md",
     "/Reseau/img/Pasted image 20240319145649.png",
     "/Reseau/img/Pasted image 20240319145056.png",
     "/Reseau/img/Pasted image 20240319144353.png",
     "/Reseau/img/Pasted image 20240319143817.png",
-    "/Reseau/VTP.md",
     "Reseau/img",
     "Reseau",
     "/Reseau/img",
