@@ -122,9 +122,31 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "8368721405108cee",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Untitled.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "06464eab21a0ca6a",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.5.12"
+              }
+            }
           }
         ],
-        "currentTab": 9
+        "currentTab": 11
       }
     ],
     "direction": "vertical"
@@ -190,7 +212,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Reseau/ACL.md",
+                "file": "Untitled.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -207,7 +229,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Reseau/ACL.md",
+                "file": "Untitled.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -230,7 +252,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Reseau/ACL.md"
+                "file": "Untitled.md"
               }
             }
           },
@@ -264,8 +286,10 @@
       "obsidian-importer:Open Importer": false
     }
   },
-  "active": "d452f2f22d534b83",
+  "active": "06464eab21a0ca6a",
   "lastOpenFiles": [
+    "Reseau/ACL.md",
+    "Untitled.md",
     "Reseau/ADMINISTRATION SYS.md",
     "Reseau/Redustribution.md",
     "Reseau/Routage Dynamic.md",
@@ -275,7 +299,6 @@
     "Reseau/Windows Server.md",
     "Reseau/Subneting.md",
     "Reseau/VLANS.md",
-    "Reseau/ACL.md",
     "DBA/Table Spaces.md",
     "DBA/DBA.md",
     "DBA/Cube OLAP.md",
@@ -308,7 +331,6 @@
     "Notion/COMPUTER-SCIENCE/CSS/CSS-GRID/CSS-GRID.md",
     "Notion/COMPUTER-SCIENCE/Networking-CCNA2 (in french)/concept de commutation.md",
     "Notion/COMPUTER-SCIENCE/Networking-CCNA2 (in french)/Resume/Resume.md",
-    "Notion/COMPUTER-SCIENCE/Networking-CCNA2 (in french)/Routage Inter-VLAN/Routage Inter-VLAN.md",
     "Notion/COMPUTER-SCIENCE/PHP-advanced/Class Diagram (UML)",
     "Notion/COMPUTER-SCIENCE/CSS/CSS SELECTOR",
     "Notion/COMPUTER-SCIENCE/CSS/CSS-GRID",
