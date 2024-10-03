@@ -154,9 +154,19 @@
                 "currentVersion": "1.6.3"
               }
             }
+          },
+          {
+            "id": "e6075eab4926126d",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.6.7"
+              }
+            }
           }
         ],
-        "currentTab": 12
+        "currentTab": 13
       }
     ],
     "direction": "vertical"
@@ -296,7 +306,7 @@
       "obsidian-importer:Open Importer": false
     }
   },
-  "active": "a536758694ffa93d",
+  "active": "e6075eab4926126d",
   "lastOpenFiles": [
     "Reseau/ACL.md",
     "Untitled.md",
